@@ -1,9 +1,10 @@
 body{
     margin: 0px;
     padding: 0px;
+    background-color: rgb(247, 247, 247);
 }
 #topnav{
-    position: absolute;
+    /* position: fixed; */
     height: 30.2px;
     width: 100%;
     display: grid;
@@ -39,18 +40,17 @@ body{
     /* position: fixed; */
     width: 100%;
     background-color: rgb(228,0,70);
-    height: 95px;
+    height: 65px;
     display: flex;
 }
 #logo{
     margin-left: 5%;
-    margin-top: 30px;
 }
 #logo img{
-    margin-top: 17px;
+    margin-top: 10px;
 }
 .middle{
-    margin-top: 40px;
+    margin-top: 5px;
     display: flex;
     margin-left: 6%;
 }
@@ -72,15 +72,15 @@ body{
 .cart{
     display: flex;
     margin-left: 8%;
-    margin-top: 40px;
+    margin-top: 5px;
     color: white;
 }
 .cart h4{
     margin-top: 6px;
 }
 .cart img{
-    width: 25%;
-    margin-top: -14px;
+    width: 22%;
+    margin-top: -20px;
     margin-left: 10px;
 }
 .cart span{
@@ -92,12 +92,9 @@ body{
 }
 .singin{
     display: flex;
-    margin-left: 1%;
-    margin-top: 30px;
     color: white;
     padding: 20px;
     width: 100px;
-    
 }
 .singin:hover{
     background-color: rgb(41, 43, 43);
@@ -110,4 +107,120 @@ body{
     width: 30%;
     margin-left: 10px;
     margin-top: -7px;
+}
+
+
+.tranding{
+    background-color: white;
+    margin: 0px 77px;
+    padding: 5px;
+}
+.tranding>img:nth-child(2){
+    position: absolute;
+    margin-top: 10%;
+    cursor: pointer;
+}
+.tranding>img:nth-child(4){
+    position: absolute;
+    margin-left: 87%;
+    margin-top: -17%;
+    cursor: pointer;
+}
+#trandingProducts{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+#trandingProducts>div{
+    padding: 5px;
+    border: 1px solid rgb(236, 236, 236);
+}
+#trandingProducts>div:hover{
+    cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#trandingProducts>div>img:nth-child(1){
+    width: 100%;
+}
+#trandingProducts>div h3{
+    color: #504f4f;
+    height: 65px;
+}
+.retings{
+    color: #FFC315;
+}
+.retings::before{
+        content: "\2605\2605\2605\2605";
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 18px;
+    
+}
+.price{
+    color: #8d8b8b;
+    text-decoration:line-through;
+    text-decoration-color: black;
+    margin-right: 10px;
+}
+.offerPrice{
+    margin-right: 15px;
+}
+#trandingProducts>div p{
+    text-align: center;
+    margin-left: 70%;
+    margin-top: -20px;
+    border: 1px solid rgb(189, 189, 189);
+    width: 60px;
+}
+.topProducts{
+    padding-top: 5px;
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 100px;
+}
+.topProducts h3{
+    text-align: center;
+}
+#topProducts{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+#topProducts>div{
+    padding: 10px;
+    border: 1px solid rgb(236, 236, 236);
+}
+#topProducts>div:hover{
+    cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#topProducts>div>img:nth-child(1){
+    width: 100%;
+}
+#topProducts>div p{
+    text-align: center;
+    margin-left: 70%;
+    margin-top: -20px;
+    border: 1px solid rgb(189, 189, 189);
+    width: 60px;
+}
+
+.download{
+    margin: 2%;
+    background-color: white;
+    display: flex;
+}
+.download>img:nth-child(1){
+    margin-left: 17%;
+}
+.download>div:nth-child(2) h2{
+    font-size: 50px;
+    margin-top: 20%;
+}
+.download>div:nth-child(2) div{
+    display: flex;
+    margin-top: 30px;
+}
+.download>img:nth-child(3){
+    width: 50%;
+    margin-left: 30%;
 }
