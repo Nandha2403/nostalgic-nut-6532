@@ -2,16 +2,19 @@ body{
     margin: 0px;
     padding: 0px;
     background-color: rgb(247, 247, 247);
+    margin-top: 90px;
+}body>nav{
+    position: fixed;
+    width: 100%;
+    margin-top: -90px;
 }
 #topnav{
-    /* position: fixed; */
     height: 30.2px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     background-color: rgb(198,0,61) ;
     margin-top: 0px;
-    /* display: none; */
 }
 #topnav>div:nth-child(1){
     margin-left: 10%;
@@ -37,7 +40,6 @@ body{
     margin-top: 5px;
 }
 #nav{
-    /* position: fixed; */
     width: 100%;
     background-color: rgb(228,0,70);
     height: 65px;
@@ -304,4 +306,13 @@ footer{
     display: flex;
     justify-content: space-between;
     border-top: #a1a0a0 1px solid;
+}
+#totop{
+    position: absolute;
+    margin-left: 92%;
+    margin-top: -50px;
+}
+#totop img{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 50%;
 }
