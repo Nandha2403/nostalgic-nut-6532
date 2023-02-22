@@ -3,7 +3,8 @@ body{
     padding: 0px;
     background-color: rgb(247, 247, 247);
     margin-top: 90px;
-}body>nav{
+}
+body>nav{
     position: fixed;
     width: 100%;
     margin-top: -90px;
