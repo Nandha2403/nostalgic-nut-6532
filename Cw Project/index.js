@@ -119,3 +119,10 @@ function displayTopProducts(products){
         topProducts.append(div)
     }
 }
+
+function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+}
