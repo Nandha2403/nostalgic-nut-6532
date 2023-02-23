@@ -1,0 +1,11 @@
+{
+    "user":[
+        {
+            "name": "Ashish",
+            "email": "ashish997@gmail.comm",
+            "contactDetails": "9999463234",
+            "DOB": "03/03/1999",
+            "password": "ashi@321"
+        }
+    ]
+}
