@@ -2,6 +2,12 @@ body{
     margin: 0px;
     padding: 0px;
     background-color: rgb(247, 247, 247);
+    margin-top: 90px;
+}
+body>nav{
+    position: fixed;
+    width: 100%;
+    margin-top: -90px;
 }
 #topnav{
     /* position: fixed; */
@@ -381,4 +387,14 @@ input[name="r"]{
 #slider2{
     margin-top: 15%;
     margin-left: 20%;
+}
+
+#totop{
+    position: absolute;
+    margin-left: 92%;
+    margin-top: -50px;
+}
+#totop img{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 50%;
 }
