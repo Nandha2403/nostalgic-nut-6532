@@ -126,3 +126,71 @@ function scrollToTop() {
       behavior: "smooth"
     });
 }
+
+let Slideimg=
+[
+"https://n4.sdlcdn.com/imgs/k/k/z/web_banner_07-092e2.jpg",
+"https://n1.sdlcdn.com/imgs/k/f/v/12_april_WB_Kitchen_Essentials_WEB-cca82.jpg",
+"https://n3.sdlcdn.com/imgs/k/f/v/12_april_WB_Breezy_Dresses_WEB-5febf.jpg",
+"https://n1.sdlcdn.com/imgs/k/f/v/12_april_WB_Festive_kurta_sets_WEB_1-9d9b7.jpg",
+"https://n1.sdlcdn.com/imgs/k/f/v/12_april_WB_Kitchen_Essentials_WEB-cca82.jpg"
+]
+
+SlideShowAds(Slideimg)
+
+function SlideShowAds(Slideimg){
+    let c=0;
+    let slideShow=document.getElementById("slideShowImage");
+    let img=document.createElement("img");
+
+    setInterval(()=>{
+        if(c==Slideimg.length){
+            c=0;
+        }
+        img.src=Slideimg[c];
+        slideShow.append(img)
+        c++;
+    },4000)
+}
+
+let RecentlyCards=document.getElementById("RecentlyCards")
+
+let RecentProductsArr = [
+    {img:'https://n3.sdlcdn.com/imgs/k/k/1/large/Asian-Shoes-White-Men-s-SDL280193320-1-ca3ad.jpeg' , title:"ASIAN - White Men's Sports Running Shoes", price:699,offerPrice:549 , discount:21},
+    {img:'https://n1.sdlcdn.com/imgs/b/w/i/large/Rigo-Navy-Round-T-Shirt-SDL252591801-1-f1560.jpg' , title:"Rigo - Blue Cotton Regular Fit Men's T-Shirt ( Pack of 1 )", price:799,offerPrice:319 , discount:60},
+    {img:'https://n2.sdlcdn.com/imgs/i/2/b/large/ASIAN-Gray-Running-Shoes-SDL688623764-1-4f95f.jpeg' , title:"ASIAN Grey Men's Sports Running Shoes", price:699,offerPrice:539 , discount:23},
+    {img:'https://n1.sdlcdn.com/imgs/i/3/9/large/DARK-ROMANCE-Faux-Leather-Beige-SDL899800683-1-500e3.jpeg' , title:"Veirdo - Multicolor Cotton Regular Fit Men's T-Shirt ", price:699,offerPrice:159 , discount:77}
+    ]
+    
+    RecentProducts(RecentProductsArr)
+    function RecentProducts(RecentProductsArr){
+        RecentlyCards.innerHTML = ""
+    
+        for(let i=0 ; i<RecentProductsArr.length ; i++){
+            let item = RecentProductsArr[i]
+    
+            let div = document.createElement("div")
+    
+            let img = document.createElement("img")
+            let title = document.createElement("h3")
+            let retings = document.createElement("div")
+            let price = document.createElement("span")
+            let offerPrice = document.createElement("span")
+            let discount = document.createElement("p")
+    
+    
+            img.setAttribute("src" , item.img)
+            title.innerText = item.title
+            retings.classList.add("retings")
+            price.innerText = "RS "+item.price
+            price.classList.add("price")
+            offerPrice.innerText ="RS "+ item.offerPrice
+            offerPrice.classList.add("offerPrice")
+            discount.innerText = item.discount +"%OFF"
+            discount.classList.add("discount")
+    
+    
+            div.append(img , title , retings, price , offerPrice , discount)
+            RecentlyCards.append(div)
+        }
+    }
