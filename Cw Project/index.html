@@ -21,69 +21,796 @@
     </nav>
     <div id="nav">
         <div id="logo">
-            <img src="./qickdeals.png" alt="" >
+            <img src="./image/qickdeals.png" alt="" >
         </div>
         <div class="middle">
             <input type="search" placeholder="Search products & brands">
-            <button><img src="/image/search.svg" alt=""> Search</button>
+            <button id="search"><ion-icon name="search-outline"></ion-icon> Search</button>
         </div>
         <div class="cart">
             <h4>Cart</h4>
-            <img src="./image/shopping_cart.svg" alt="">
+            <ion-icon name="cart-outline" id="Carticon"></ion-icon>
             <span id="cart_count">0</span>
         </div>
         <div class="singin">
             <h4>Sing In</h4>
-            <img src="./image/account.svg" alt="">
+            <ion-icon name="person-circle-outline" id="singinlogo"></ion-icon>
         </div>
     </div>
+    <div ></div>
     <div id="main">
         <!-- Here is the code for category part -->
         <div class="category">
-            <h5>Top categories</h5>
-            <div>Mens Fashion</div>
+            <nav>
+                <ul>
+                    <div id="heading">TOP CATEGORIES</div>
+                    <li class="dropdown"><a href="">
+                        <span class="labelIcon" style="background-image: url(https://i3.sdlcdn.com/img/leftnavicon09/30x30mobile4.png);"></span>
+                        <span>Men's Fashion</span>
+                        <div id="floatbox">
+                            <div>
+                                 <ul>
+                                    <h5>FOOTWARE</h5>
+                                    <li><a href="">Sport Shoes</a></li>
+                                    <li><a href="">Casual Shoes</a></li>
+                                    <li><a href="">Slippers & Flip Flops</a></li>
+                                    <li><a href="">Sandals & Floaters</a></li>
+                                    <li><a href="">Formal Shoes</a></li>
+                                    <li><a href="">Loafers</a></li>
+                                    <li><a href="">Sneakers</a></li>
+                                    <li><a href="">Ethnic Footwear</a></li>
+                                    <li><a href="">Shoe Accessdries</a></li>
+                                    <li><a id="ViewAll" href="">View All <i>></i></a></li>
+                                    <h5>BAGS & LUGGAGE</h5>
+                                    <li><a href="">Backpacks</a></li>
+                                    <li><a href="">Laptop Bags</a></li>
+                                    <li><a href="">Hiking Bags</a></li>
+                                    <li><a href="">Luggage & Suitcases</a></li>
+                                    <li><a href="">Travel Accessories</a></li>
+                                    <li><a href="">Office Bags</a></li>
+                                    <li><a id="ViewAll" href="">View All <i>></i></a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                   <h5>CLOTHING</h5>
+                                   <li><a href="">T-Shirts & Polos</a></li>
+                                   <li><a href="">Shirts</a></li>
+                                   <li><a href="">Jeans</a></li>
+                                   <li><a href="">Trousers & Chinos</a></li>
+                                   <li><a href="">Innerwear & Sleepwear</a></li>
+                                   <li><a id="ViewAll" href="">View All <i>></i></a></li>
+                                   <h5>WINTER WEAR</h5>
+                                   <li><a href="">Jackets</a></li>
+                                   <li><a href="">Sweatshirts</a></li>
+                                   <li><a href="">Sweater</a></li>
+                                   <li><a href="">Thermals</a></li>
+                                   <li><a id="ViewAll" href="">View All <i>></i></a></li>
+                                   <h5>SPORTS WEAR</h5>
+                                   <li><a href="">T-shirt & Polos</a></li>
+                                   <li><a href="">Trackpants & Tracksuits</a></li>
+                                   <li><a id="ViewAll" href="">View All <i>></i></a></li>
+                                   <h5>MEN'S GROOMING</h5>
+                                   <li><a href="">Shaving Creams & Gel</a></li>
+                                   <li><a id="ViewAll" href="">View All <i>></i></a></li>
+                               </ul>
+                           </div>
+                           <div class="last">
+                            <ul>
+                               <h5>EYEWEAR</h5>
+                               <li><a href="">Sunglasses</a></li>
+                               <li><a id="ViewAll" href="">View All <i>></i></a></li>
+                               <h5>WATCHES</h5>
+                               <h5>JEWELLERY & CUFFLINKS</h5>
+                               <h5>ACCESSORIES</h5>
+                               <li><a href="">Wallets</a></li>
+                               <li><a href="">Belts</a></li>
+                               <li><a href="">Hats & Caps</a></li>
+                               <li><a href="">Gift Sets</a></li>
+                               <li><a href="">Neckties & Cravats</a></li>
+                               <li><a href="">Card Holders</a></li>
+                               <li><a href="">Keychains</a></li>
+                               <li><a href="">Suspenders</a></li>
+                               <li><a id="ViewAll" href="">View All <i>></i></a></li>
+                               <h5>FRAGRANCES</h5>
+                               <li><a href="">Perfumes</a></li>
+                               <li><a href="">Deodorants</a></li>
+                               <li><a href="">Attars (Non-Alcoholic)</a></li>
+                               <li><a id="ViewAll" href="">View All <i>></i></a></li>
+                           </ul>
+                       </div>
+                       <div class="last"><img src="https://n4.sdlcdn.com/imgs/i/1/o/MF-05994.jpg" alt=""></div>
+                        </div>
+                    </a></li>
+                    <li><a href="">
+                        <span class="labelIcon" style="background-image: url(https://i2.sdlcdn.com/img/leftnavicon09/30x30home_living2.png);"></span>
+                        <span>Women's Fashion</span>
+                        <div id="floatbox">
+                            <div>
+                                 <ul>
+                                    <h5>ETHNIC WEAR</h5>
+                                    <li><a href="">Sarees</a></li>
+                                    <li><a href="">Kurtas & Kurtis</a></li>
+                                    <li><a href="">Salwar Suits</a></li>
+                                    <li><a href="">Lahengas</a></li>
+                                    <li><a href="">Salwars & Leggings</a></li>
+                                    <li><a href="">Blouses & Petticoats</a></li>
+                                    <li><a id="ViewAll" href="">View All <i>></i></a></li>
+                                    <h5>FOOTWEAR</h5>
+                                    <li><a href="">Heels</a></li>
+                                    <li><a href="">Flats & Sandals</a></li>
+                                    <li><a href="">Slippers & Flip Flops</a></li>
+                                    <li><a href="">Ballerinas</a></li>
+                                    <li><a href="">Casual Shoes</a></li>
+                                    <li><a href="">Sport Shoes</a></li>
+                                    <li><a href="">Ethnic Footwear</a></li>
+                                    <li><a href="">Floater Sandal</a></li>
+                                    <li><a id="ViewAll" href="">View All <i>></i></a></li>
+                                    <h5>PERFUMES & FRAGRANCES</h5>
+                                    <li><a href="">Perfumes</a></li>
+                                    <li><a href="">Deodorants</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                   <h5>WESTERN WEAR</h5>
+                                   <li><a href="">Dresses</a></li>
+                                   <li><a href="">Tops & Tunics</a></li>
+                                   <li><a href="">T-Shirts</a></li>
+                                   <li><a href="">Shirts</a></li>
+                                   <li><a href="">Denims & Trousers</a></li>
+                                   <li><a href="">Pants & Palazzos</a></li>
+                                   <li><a href="">Innerwear</a></li>
+                                   <li><a href="">Nightwear</a></li>
+                                   <li><a href="">Sportswear</a></li>
+                                   <li><a id="ViewAll" href="">View All <i>></i></a></li>
+                                   <h5>WINTER WEAR</h5>
+                                   <li><a href="">Outerwear & Jackets</a></li>
+                                   <li><a href="">Sweatshirts</a></li>
+                                   <li><a href="">Cardigans & Pullovers</a></li>
+                                   <li><a href="">Shrugs & Waistcoats</a></li>
+                                   <h5>MATERNITY WEAR</h5>
+                                   <h5>HANDBAGS & CLUTCHES</h5>
+                                   <li><a href="">Handbags</a></li>
+                                   <li><a href="">Wallets</a></li>
+                                   <li><a href="">Clutches</a></li>
+                                   <li><a href="">Utility bags</a></li>
+                               </ul>
+                           </div>
+                           <div class="last">
+                            <ul>
+                               <h5>EYEWEAR</h5>
+                               <li><a href="">Sunglasses</a></li>
+                               <li><a href="">Spectacle Frames</a></li>
+                               <h5>WATCHES</h5>
+                               <h5>FASHON JEWELLERY</h5>
+                               <li><a href="">Necklaces & Sets</a></li>
+                               <li><a href="">Earings</a></li>
+                               <li><a href="">Brangles & Bracelets</a></li>
+                               <li><a href="">Pendants & Sets</a></li>
+                               <li><a id="ViewAll" href="">View All <i>></i></a></li>
+                               <h5>GOLD COINS & BARS</h5>
+                               <h5>FASHION ACCESSORIES</h5>
+                               <li><a href="">Hair Accessories</a></li>
+                               <li><a href="">Stoles & Scraves</a></li>
+                               <li><a href="">Socks & Stockings</a></li>
+                               <li><a id="ViewAll" href="">View All <i>></i></a></li>
+                           </ul>
+                       </div>
+                       <div class="last"><img src="https://n1.sdlcdn.com/imgs/i/n/g/MS_WomenWatches_LeftNav1Aug-e15a1.jpg" alt=""></div>
+                        </div>
+                    </a></li>
+                    <li><a href="">
+                        <span class="labelIcon" style="background-image: url(https://n2.sdlcdn.com/imgs/c/0/x/Homekitchenfurnishing-3eda1.jpg);"></span>
+                        <span>Home & Kitchen</span>
+                        <div id="floatbox">
+                            <div>
+                                 <ul>
+                                    <h5>KITCHEN APPLIANCES</h5>
+                                    <li><a href="">Juicer Mixer Grinders</a></li>
+                                    <li><a href="">Water Purifiers</a></li>
+                                    <li><a href="">Gas Stoves & Hobs</a></li>
+                                    <li><a href="">Chimneys</a></li>
+                                    <li><a href="">Induction Cooktops</a></li>
+                                    <li><a href="">Kettles & Coffee Makers</a></li>
+                                    <li><a href="">Choppers & Blenders</a></li>
+                                    <li><a href="">Sandwich Makers</a></li>
+                                    <li><a href="">Roti Makers</a></li>
+                                    <li><a href="">Electric Cookers</a></li>
+                                    <li><a href="">Air Fryers</a></li>
+                                    <li><a id="ViewAll" href="">View All <i>></i></a></li>
+                                    <h5>KITCHENWEAR</h5>
+                                    <li><a href="">Cookware & Bakeware</a></li>
+                                    <li><a href="">Kitchen Storage</a></li>
+                                    <li><a href="">Dining & Serving</a></li>
+                                    <li><a href="">Kitchen Tools</a></li>
+                                    <li><a href="">Pressure Cookers</a></li>
+                                    <li><a href="">Water Bottles</a></li>
+                                    <li><a href="">Tea & Coffeeware</a></li>
+                                    <li><a href="">Bar Accessories</a></li>
+                                    <li><a id="ViewAll" href="">View All <i>></i></a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                   <h5>HOME FURNISHING</h5>
+                                   <li><a href="">Bed Linen</a></li>
+                                   <li><a href="">Bath Linen</a></li>
+                                   <li><a href="">Blankets & Quilts</a></li>
+                                   <li><a href="">Curtains & Accessories</a></li>
+                                   <li><a href="">Matteresses</a></li>
+                                   <li><a id="ViewAll" href="">View All <i>></i></a></li>
+                                   <h5>FURNITURE</h5>
+                                   <li><a href="">Storage & Display</a></li>
+                                   <li><a href="">Bean Bags</a></li>
+                                   <li><a href="">Tables & Desks</a></li>
+                                   <li><a id="ViewAll" href="">View All <i>></i></a></li>
+                                   <h5>HOME DECOR</h5>
+                                   <li><a href="">Lighting Fixtures</a></li>
+                                   <li><a href="">Well Decor</a></li>
+                                   <li><a href="">Gift Decor</a></li>
+                                   <li><a href="">Religion & Spirituality</a></li>
+                                   <li><a href="">LED Bulbs</a></li>
+                                   <li><a id="ViewAll" href="">View All <i>></i></a></li>
+                               </ul>
+                           </div>
+                           <div class="last">
+                            <ul>
+                               <h5>HOME IMPROVEMENT</h5>
+                               <li><a href="">Home Utility</a></li>
+                               <li><a href="">Cleaning Mops</a></li>
+                               <li><a href="">Plants & Gardening</a></li>
+                               <li><a href="">Ironing Boards</a></li>
+                               <li><a href="">Home Cleaning</a></li>
+                               <li><a href="">Laundry Accessories</a></li>
+                               <li><a id="ViewAll" href="">View All <i>></i></a></li>
+                               <h5>TOOLS & HARDWARE</h5>
+                               <li><a href="">Power & Hand Tools</a></li>
+                               <li><a href="">Bathroom Accessories</a></li>
+                               <li><a href="">Electrical</a></li>
+                               <li><a href="">Taps & Showers</a></li>
+                               <li><a href="">Safes Lock & Door Fitting</a></li>
+                               <li><a href="">Sanitaryware</a></li>
+                               <li><a id="ViewAll" href="">View All <i>></i></a></li>
+                               <h5>PET SUPPLIES</h5>
+                               <li><a href="">Dog Supplies</a></li>
+                               <li><a href="">Cat Supplies</a></li>
+                               <li><a href="">Fish & Aquatic Supplies</a></li>
+                               <li><a href="">Bird Supplies</a></li>
+                               <li><a id="ViewAll" href="">View All <i>></i></a></li>
+                           </ul>
+                       </div>
+                       <div class="last"><img src="https://n1.sdlcdn.com/imgs/i/1/r/GM_28oct-e8cd1.jpg" alt=""></div>
+                        </div>
+                    </a></li>
+                    <li><a href="">
+                        <span class="labelIcon" style="background-image: url(https://i3.sdlcdn.com/img/leftnavicon09/30x30music1.png);"></span>
+                        <span>Toys,Kids'Fashion</span>
+                        <div id="floatbox">
+                            <div>
+                                 <ul>
+                                    <h5>TOYS</h5>
+                                    <li><a href="">Toy Cars</a></li>
+                                    <li><a href="">Electronic Toys</a></li>
+                                    <li><a href="">Action Toys & Figures</a></li>
+                                    <li><a href="">Ride On & Scooters</a></li>
+                                    <li><a href="">Outdoor Toys</a></li>
+                                    <li><a href="">Soft Toys</a></li>
+                                    <li><a href="">Educational Toys</a></li>
+                                    <li><a href="">Toodler Toys</a></li>
+                                    <li><a href="">Dolls & Doll Houses</a></li>
+                                    <li><a href="">Activity Sets</a></li>
+                                    <li><a href="">Indoor & Board Games</a></li>
+                                    <li><a href="">Party Supplies</a></li>
+                                    <h5>BYECYCLES & TRICYCLES</h5>
+                                    <h5>KIDS FOOTWEAR</h5>
+                                    <li><a href="">Boys Footwear</a></li>
+                                    <li><a href="">Girls Footwear</a></li>
+                                    <li><a href="">Baby Footwear</a></li>
+                                    <h5>ACCESSORIES</h5>
+                                    <li><a href="">Eyewear</a></li>
+                                    <h5>KIDS WATCHES</h5>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                   <h5>KIDS CLOTHING</h5>
+                                   <h5>GIRLS CLOTHING</h5>
+                                   <li><a href="">Frocks & Dresses</a></li>
+                                   <li><a href="">Lehenga Cholis & Sarees</a></li>
+                                   <li><a href="">Jeans & Pants</a></li>
+                                   <li><a href="">Suit Sets</a></li>
+                                   <li><a href="">Top, Tees & Shirts</a></li>
+                                   <li><a href="">Leggings & Jeggings</a></li>
+                                   <li><a href="">Top & Bottom Sets</a></li>
+                                   <h5>BOYS CLOTHING</h5>
+                                   <li><a href="">Top Wear</a></li>
+                                   <li><a href="">Top & Bottom Sets</a></li>
+                                   <li><a href="">Bottom Wear</a></li>
+                                   <li><a href="">Ethincwear</a></li>
+                                   <li><a href="">Innerwear</a></li>
+                                   <li><a href="">Nightwear</a></li>
+                                   <h5>BABY CLOTHING</h5>
+                                   <li><a href="">Top & Bottom Sets</a></li>
+                                   <li><a href="">Frocks Dresses & Skirts</a></li>
+                                   <li><a href="">Roompers & Body Suits</a></li>
+                                   <li><a href="">Shirts, T-shirts & Tops</a></li>
+                                   <li><a href="">Bottom Wear</a></li>
+                               </ul>
+                           </div>
+                           <div class="last">
+                            <ul>
+                               <h5>BABY CARE</h5>
+                               <li><a href="">Baby Mosquito Nets</a></li>
+                               <li><a href="">Baby Blankets</a></li>
+                               <li><a href="">Baby Carriers</a></li>
+                               <li><a href="">Baby Strollers</a></li>
+                               <li><a href="">Walkers</a></li>
+                               <li><a href="">Feeding & Nursing</a></li>
+                               <h5>LAB EQUIPMENT</h5>
+                               <h5>STATIONERY</h5>
+                               <li><a href="">Pens & Markers</a></li>
+                               <li><a href="">Pencil Boxes</a></li>
+                               <li><a href="">Files & Folders</a></li>
+                               <li><a href="">Calculators</a></li>
+                               <li><a href="">Diaries & Planners</a></li>
+                               <li><a href="">Printing Papers</a></li>
+                               <li><a href="">Notebooks & Writing Pads</a></li>
+                               <li><a href="">Art & Craft Supplies</a></li>
+                               <li><a href="">Photo Papers</a></li>
+                               <li><a href="">Tapes</a></li>
+                               <li><a href="">Card Holders</a></li>
+                               <li><a href="">Stablers</a></li>
+                           </ul>
+                       </div>
+                       <div class="last"><img src="https://n1.sdlcdn.com/imgs/i/8/f/KidsNewLauchLeftNav-6aef1.jpg" alt=""></div>
+                        </div>
+    
+                    </a></li>
+                    <li><a href="">
+                        <span class="labelIcon" style="background-image: url(https://i1.sdlcdn.com/img/leftnavicon09/fashion30x30_3.png);"></span>
+                        <span>Beauty & Health</span>
+                        <div id="floatbox">
+                            <div>
+                                <ul>
+                                    <h5>BEAUTY</h5>
+                                    <li><a href="">Face</a></li>
+                                    <li><a href="">Eyes</a></li>
+                                    <li><a href="">Lips</a></li>
+                                    <li><a href="">Nails</a></li>
+                                    <li><a href="">Makeup Palettes</a></li>
+                                    <li><a href="">Brushes & Applicators</a></li>
+                                    <h5>PERSONAL CARE & GROOMING</h5>
+                                    <li><a href="">Skin Care</a></li>
+                                    <li><a href="">Hair Care</a></li>
+                                    <li><a href="">Bath & Shower</a></li>
+                                    <li><a href="">Oral Care</a></li>
+                                    <li><a href="">Men's Grooming</a></li>
+                                    <li><a href="">Feminine Hygiene</a></li>
+                                    <li><a href="">Waxing & Hair Removal</a></li>
+                                    <li><a href="">Deodorants & Roll-ons</a></li>
+                                    <h5>SEXUAL WELLNESS</h5>
+                                    <li><a href="">Condoms</a></li>
+                                    <li><a href="">Lubes</a></li>
+                                    <li><a href="">Adult Sex Toys</a></li>
+                                    <li><a href="">Performance & Enlargement</a></li>
+                                    <li><a href="">Sexy Lingerie</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                   <h5>FOOD AND GOURMENT</h5>
+                                   <li><a href="">Tea, Coffee & Beverages</a></li>
+                                   <li><a href="">Noodles, Soups & Pastas</a></li>
+                                   <li><a href="">Biscuits</a></li>
+                                   <li><a href="">Breakfast Foods</a></li>
+                                   <li><a href="">Ready To Cook & Eat</a></li>
+                                   <li><a href="">Sauces & Dressings</a></li>
+                                   <li><a href="">Baking Essentials</a></li>
+                                   <li><a href="">Chocolates & Candies</a></li>
+                                   <li><a href="">Staples, Oils & Spices</a></li>
+                                   <li><a href="">Dry Fruits & Gifts Boxes</a></li>
+                                   <h5>NUTRITION & SUPPLEMENTS</h5>
+                                   <li><a href="">Protiens</a></li>
+                                   <li><a href="">Vitamins & Minerals</a></li>
+                                   <li><a href="">Health Drinks</a></li>
+                                   <li><a href="">Meal Replacements</a></li>
+                                   <li><a href="">Weight Gainers</a></li>
+                                   <li><a href="">Workout Supplements</a></li>
+                                   <li><a href="">Muscle Support</a></li>
+                                   <li><a href="">Shakers</a></li>
+                                </ul>
+                           </div>
+                           <div class="last">
+                                <ul>
+                                    <h5>HEALTH MONITORING DEVICES</h5>
+                                    <li><a href="">BP Monitors</a></li>
+                                    <li><a href="">Baby Blankets</a></li>
+                                    <li><a href="">Diabetic Care</a></li>
+                                    <li><a href="">Weighing Scales</a></li>
+                                    <li><a href="">Body Fat Analysers</a></li>
+                                    <li><a href="">Respiratory & Health Care</a></li>
+                                    <li><a href="">Thermometers</a></li>
+                                    <h5>GENERAL WELLNESS</h5>
+                                    li><a href="">Massager & Pain Relief</a></li>
+                                    <li><a href="">Mobility Rehabilation</a></li>
+                                    <li><a href="">First Aid</a></li>
+                                    <li><a href="">Nicotine Gums</a></li>
+                                    <h5>BABY CARE</h5>
+                                    <li><a href="">Diapers & Potty Training</a></li>
+                                    <li><a href="">Bath,Skin & Health Care</a></li>
+                                    <li><a href="">Baby Food</a></li>
+                                    <h5>HOUSEHOLD ESSENTIALS</h5>
+                                    <li><a href="">Detergents & Fabric Care</a></li>
+                                    <li><a href="">House & Kitchen Cleaners</a></li>
+                                    <li><a href="">Repellents</a></li>
+                                    <li><a href="">Air Freshener</a></li>
+                                </ul>
+                            </div>
+                            <div class="last"><img src="https://n1.sdlcdn.com/imgs/i/1/o/fmcg-0f707.jpg" alt=""></div>
+                        </div>
+                    </a></li>
+                </ul>
+            </nav>
+            <nav class="second">
+                <ul>
+                    <div id="secondHeading">MORE CATEGORIES</div>
+                    <li><a href="">
+                        <span>Automotives</span>
+                        <div id="floatbox">
+                            <div>
+                                 <ul>
+                                    <h5>AUTOMOTIVE ACCESSORIES</h5>
+                                    <h5>CAR & VEHICLE ELECTRONICS</h5>
+                                    <li><a href="">Car Stereoes & Monitors</a></li>
+                                    <li><a href="">Car Speakers & Tweeters</a></li>
+                                    <li><a href="">Bluetooth Devices</a></li>
+                                    <li><a href="">Car GPS Navigation</a></li>
+                                    <li><a id="ViewAll" href="">View All <i>></i></a></li>
+                                    <h5>CAR ACCESSORIES</h5>
+                                    <li><a href="">Car Body Covers</a></li>
+                                    <li><a href="">Car Mobile Chargers</a></li>
+                                    <li><a href="">Car Mobile Holders</a></li>
+                                    <li><a href="">Car Foot Mats</a></li>
+                                    <h5>TYRE INFLATORS</h5>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                   <h5>CAR FRESHENER</h5>
+                                   <h5>AIR PURIFIERS & IONIZER</h5>
+                                   <h5>BIKER GEAR & ACCESSORIES</h5>
+                                   <li><a href="">Bike Body Covers</a></li>
+                                   <li><a href="">Biker Protective Gear</a></li>
+                                   <h5>BIKER RAINCOATS</h5>
+                                   <h5>HELMETS & ACCESSORIES</h5>
+                                   <li><a href="">Helmet Accessories</a></li>
+                                   <h5>PARTS & SPARES</h5>
+                                   <li><a href="">Filters</a></li>
+                                   <li><a href="">Lighting</a></li>
+                                   <li><a href="">Eternal Parts</a></li>
+                               </ul>
+                           </div>
+                           <div class="last">
+                            <ul>
+                               <h5>TYERS & ALLOYS</h5>
+                               <li><a href="">Car Tyers</a></li>
+                               <li><a href="">Bike Tyers</a></li>
+                           </ul>
+                       </div>
+                       <div class="last"><img src="https://n1.sdlcdn.com/imgs/i/7/5/nipponleftnav-34888.jpg" alt=""></div>
+                        </div>
+                    </a></li>
+                    <li><a href=""><span>Mobile & Accessories</span>
+                        <div id="floatbox">
+                            <div>
+                                 <ul>
+                                    <h5>MOBILE CASES & COVERS</h5>
+                                    <li><a href="">Printed Back Covers</a></li>
+                                    <li><a href="">Plain Back Covers</a></li>
+                                    <li><a href="">Flip Covers</a></li>
+                                    <li><a id="ViewAll" href="">View All <i>></i></a></li>
+                                    <h5>POWER BANKS</h5>
+                                    <li><a href="">Ambrane</a></li>
+                                    <li><a href="">Intex</a></li>
+                                    <li><a href="">Syska</a></li>
+                                </ul>
+                            </div>
+                            <div class="last">
+                                <ul>
+                                   <h5>MOBILE ACCESSORIES</h5>
+                                   <li><a href="">Screen Guards</a></li>
+                                   <li><a href="">Cables & Chargers</a></li>
+                                   <li><a href="">Selfie Sticks</a></li>
+                                   <li><a href="">Bluetooth Devices</a></li>
+                                   <li><a id="ViewAll" href="">View All <i>></i></a></li>
+                                   <li><a href="">Life Like</a></li>
+                                   <li><a href="">Top Selling Wearables</a></li>
+                                   <h5>MEMORY CARDSS</h5>
+                               </ul>
+                           </div>
+                       <div class="last"><img src="https://n2.sdlcdn.com/imgs/i/7/q/Mobiles_17jan-197ca.jpg" alt=""></div>
+                        </div>
+                    </a></li>
+                    <li><a href=""><span>Electronics</span>
+                        <div id="floatbox">
+                            <div>
+                                 <ul>
+                                    <h5>SPEAKERS</h5>
+                                    <li><a href="">Home Audio Systems</a></li>
+                                    <li><a href="">Bluetooth Speakers</a></li>
+                                    <li><a href="">2.0 Speakers</a></li>
+                                    <h5>HEADPHONE & EARPHONES</h5>
+                                    <li><a href="">Headphones</a></li>
+                                    <li><a href="">Earphones</a></li>
+                                    <li><a href="">Headsets with mic</a></li>
+                                    <h5>AUDIO & VIDEO</h5>
+                                    <li><a href="">MP3 & Media Players</a></li>
+                                    <li><a href="">Projectors</a></li>
+                                    <li><a href="">Audio & Video Accessories</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                   <h5>ALL LARGE APPLIANCES</h5>
+                                   <li><a href="">Geysers</a></li>
+                                   <li><a href="">Immersion Rods</a></li>
+                                   <li><a href="">Room Heaters</a></li>
+                                   <h5>FANS</h5>
+                                   <li><a href="">Celling Fans</a></li>
+                                   <li><a href="">Table Fans</a></li>
+                                   <li><a href="">Exaust Fans</a></li>
+                               </ul>
+                           </div>
+                            <div class="last">
+                                <ul>
+                                   <h5>HOME APPLIANCES</h5>
+                                   <li><a href="">Microwaves & OTG</a></li>
+                                   <li><a href="">Air Purifiers</a></li>
+                                   <li><a href="">Vaccum Cleaners</a></li>
+                                   <li><a href="">Irons</a></li>
+                                   <li><a href="">Landline Phones</a></li>
+                                   <li><a href="">Home Security Systems</a></li>
+                                   <li><a href="">Sewing Machines</a></li>
+                                   <h5>GROOMING APPLIANCES</h5>
+                                   <li><a href="">Trimmers</a></li>
+                                   <li><a href="">Shavers</a></li>
+                                   <li><a href="">Hair Dryers</a></li>
+                                   <li><a href="">Hair Straighteners</a></li>
+                                   <li><a href="">Hair Curlers & More</a></li>
+                               </ul>
+                           </div>
+                       <div class="last"><img src="https://n4.sdlcdn.com/imgs/i/1/o/electronics-7e68c.jpg" alt=""></div>
+                        </div>
+                    </a></li>
+                    <li><a href=""><span>Sports,Fitness & Outdoor</span>
+                        <div id="floatbox">
+                            <div>
+                                 <ul>
+                                    <h5>SPORTS & FITNESS</h5>
+                                    <h5>GET FIT AT HOME</h5>
+                                    <li><a href="">Home Gym</a></li>
+                                    <li><a href="">Dumbbells</a></li>
+                                    <li><a href="">Treadmills</a></li>
+                                    <li><a href="">Abdominal Exercisers</a></li>
+                                    <li><a href="">Exercise Bikes</a></li>
+                                    <li><a href="">Yoga Mats</a></li>
+                                    <li><a href="">Exercise Benches</a></li>
+                                    <li><a href="">Weighing Scales</a></li>
+                                    <li><a id="ViewAll" href="">View All <i>></i></a></li>
+                                    <h5>GET READY FOR GYM</h5>
+                                    <li><a href="">Sports Footwear</a></li>
+                                    <li><a href="">Fitness Gadgets</a></li>
+                                    <li><a href="">Slippers</a></li>
+                                    <li><a href="">Gym Gloves</a></li>
+                                    <li><a href="">Sports Nutrition</a></li>
+                                    <li><a href="">Gym Bags</a></li>
+                                </ul>
+                            </div>
+                            <div class="last">
+                                <ul>
+                                   <h5>SPORTS</h5>
+                                   <li><a href="">Running</a></li>
+                                   <li><a href="">Cricket</a></li>
+                                   <li><a href="">Kids Cycles</a></li>
+                                   <li><a href="">Adult Cycles</a></li>
+                                   <li><a href="">Bicycle Accessories</a></li>
+                                   <li><a href="">Badminton</a></li>
+                                   <li><a href="">Football</a></li>
+                                   <li><a href="">Basketball</a></li>
+                                   <li><a href="">Skating</a></li>
+                                   <li><a href="">Archery and Shooting</a></li>
+                                   <li><a id="ViewAll" href="">View All <i>></i></a></li>
+                                   <h5>HIKING & OUTDOOR</h5>
+                                   <li><a href="">Knives & Tools</a></li>
+                                   <li><a href="">Backpacks</a></li>
+                                   <li><a href="">Hiking Bags</a></li>
+                                   <li><a href="">Luggage & Suitcases</a></li>
+                                   <li><a href="">Travel Accessories</a></li>
+                                   <li><a id="ViewAll" href="">View All <i>></i></a></li>
+                               </ul>
+                           </div>
+                            <div class="last"><img src="https://n4.sdlcdn.com/imgs/i/1/r/yogamats_28th-18875.jpg" alt=""></div>
+                        </div>
+                    </a></li>
+                    <li><a href=""><span>Computers & Gaming</span>
+                        <div id="floatbox">
+                            <div>
+                                 <ul>
+                                    <li><a href="">Printer Inks & Toner</a></li>
+                                    <h5>STORAGE</h5>
+                                    <li><a href="">Exernal Hard Drives</a></li>
+                                    <li><a href="">Memory cards</a></li>
+                                    <li><a href="">Pen Drives</a></li>
+                                    <li><a href="">SSD</a></li>
+                                    <h5>NETWORKING DEVICES</h5>
+                                    <li><a href="">Data Cards</a></li>
+                                    <li><a href="">Dongles</a></li>
+                                    <li><a href="">Router</a></li>
+                                    <h5>OFFICE EQUIPMENT & SUPPLY</h5>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                   <h5>COMPUTER ACCESSORIES</h5>
+                                   <li><a href="">Keyboard</a></li>
+                                   <li><a href="">Mouse</a></li>
+                                   <li><a href="">Webcams</a></li>
+                                   <li><a href="">Laptop Skins</a></li>
+                                   <li><a href="">Cooling Pads</a></li>
+                                   <li><a href="">Extension Cords</a></li>
+                                   <li><a id="ViewAll" href="">View All <i>></i></a></li>
+                               </ul>
+                           </div>
+                            <div class="last">
+                                <ul>
+                                   <h5>GAMING</h5>
+                                   <li><a href="">Gaming Accessories</a></li>
+                                   <li><a href="">Gaming Tiles</a></li>
+                                   <li><a id="ViewAll" href="">View All <i>></i></a></li>
+                                   <h5>COMPUTER & COMPONENTS</h5>
+                                   <li><a href="">RAM</a></li>
+                                   <li><a href="">Internal Hard Drive</a></li>
+                                   <li><a href="">UPS</a></li>
+                                   <li><a id="ViewAll" href="">View All <i>></i></a></li>
+                                   <h5>SOFTWARE</h5>
+                                   <li><a href="">Antivirus</a></li>
+                                   <li><a href="">Operating System</a></li>
+                                   <li><a id="ViewAll" href="">View All <i>></i></a></li>
+                               </ul>
+                           </div>
+                            <div class="last"><img src="https://n1.sdlcdn.com/imgs/i/1/r/Laptopacc_28oct-581f8.jpg" alt=""></div>
+                        </div>
+                    </a></li>
+                    <li><a href=""><span>Books,Media & Music</span>
+                        <div id="floatbox">
+                            <div>
+                                 <ul>
+                                    <h5>VIEW ALL BOOKS</h5>
+                                    <h5>TOP EXAMS</h5>
+                                    <li><a href="">GATE</a></li>
+                                    <li><a href="">IIT JEE</a></li>
+                                    <li><a href="">NEET</a></li>
+                                    <li><a href="">BANK PO</a></li>
+                                    <li><a href="">UGC Net</a></li>
+                                    <li><a href="">UPSC</a></li>
+                                    <h5>BROWSE BY GENER</h5>
+                                    <li><a href="">School Texts</a></li>
+                                    <li><a href="">Competitive Exams</a></li>
+                                    <li><a href="">Academic & Professional</a></li>
+                                    <li><a href="">Children & Young Adults</a></li>
+                                    <li><a href="">Non-Fiction</a></li>
+                                    <li><a href="">Literature & Fiction</a></li>
+                                    <li><a href="">Self Help</a></li>
+                                    <li><a href="">Reference</a></li>
+                                    <h5>ONLINE EDUCATION</h5>
+                                    <li><a href="">Courses under Rs 99</a></li>
+                                    <li><a href="">School Learning Online</a></li>
+                                    <li><a href="">Online Test Preparatiion</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                   <h5>MUSICAL INSTRUMENTS</h5>
+                                   <li><a href="">Guitars</a></li>
+                                   <li><a href="">Keyboards</a></li>
+                                   <li><a href="">Studio Essentials</a></li>
+                                   <li><a href="">Drums</a></li>
+                                   <li><a href="">Guitar Accessories</a></li>
+                                   <li><a href="">Keyboard Accessories</a></li>
+                                   <h5>INDIAN INSTRUMENTS</h5>
+                                   <li><a href="">Tabla</a></li>
+                                   <li><a href="">Flutes</a></li>
+                                   <h5>OTHER INSTRUMENTS</h5>
+                                   <li><a href="">Mouth Organs</a></li>
+                               </ul>
+                           </div>
+                            <div class="last">
+                                <ul>
+                                   <h5>E-GIFT CARDS</h5>
+                                   <li><a href="">Cleantrip</a></li>
+                                   <li><a href="">MakeMy Trip</a></li>
+                                   <h5>MOVIES & TV SHOWS</h5>
+                                   <li><a href="">Indian Music</a></li>
+                               </ul>
+                           </div>
+                            <div class="last"><img src="https://n4.sdlcdn.com/imgs/i/6/n/BooksLeftNav_2jan-3fc88.jpg" alt=""></div>
+                        </div>
+                    </a></li>
+                    <li><a href=""><span>Hobbies</span>
+                        <div id="floatbox">
+                            <div class="last">
+                                <ul>
+                                   <li><a href="">Arts & Craft</a></li>
+                                   <li><a href="">Collectibles</a></li>
+                               </ul>
+                           </div>
+                        </div>
+                    </a></li>
+                </ul>
+            </nav>
+            <div class="ThirdNav">
+                <ul>
+                    <div id="ThirdHeading">TRENDING SEARCHES</div>
+                    <li><span><img id="SearchImg" src="https://cdn-icons-png.flaticon.com/128/8915/8915520.png" alt=""></span><a href=""> Kitchen Product</a></li>
+                    <li><span><img id="SearchImg" src="https://cdn-icons-png.flaticon.com/128/8915/8915520.png" alt=""></span><a href=""> Shoes For Men</a></li>
+                    <li><span><img id="SearchImg" src="https://cdn-icons-png.flaticon.com/128/8915/8915520.png" alt=""></span><a href=""> Kurti Set</a></li>
+                    <li><span><img id="SearchImg" src="https://cdn-icons-png.flaticon.com/128/8915/8915520.png" alt=""></span><a href=""> Sandal Men</a></li>
+                    <li><span><img id="SearchImg" src="https://cdn-icons-png.flaticon.com/128/8915/8915520.png" alt=""></span><a href=""> Sports Shoe Men</a></li>
+                </ul>
+            </div>
         </div>
         <!-- Here is the code for the sliders -->
-        <div id="slider-top">
-            <div id="slidershow1" class="mid">
-                <div class="slides">
-                    <input type="radio" name="r" id="r1" checked>
-                    <input type="radio" name="r" id="r2">
-                    <input type="radio" name="r" id="r3">
-                    <input type="radio" name="r" id="r4">
-                    <input type="radio" name="r" id="r5">
-                    <div class="slide">
-                        <img src="https://n4.sdlcdn.com/imgs/k/k/z/web_banner_07-092e2.jpg" alt="img1">
-                    </div>
-                    <div class="slide s1">
-                        <img src="https://n1.sdlcdn.com/imgs/k/f/v/12_april_WB_Kitchen_Essentials_WEB-cca82.jpg"
-                            alt="img2">
-                    </div>
-                    <div class="slide">
-                        <img src="https://n3.sdlcdn.com/imgs/k/f/v/12_april_WB_Breezy_Dresses_WEB-5febf.jpg" alt="img3">
-                    </div>
-                    <div class="slide">
-                        <img src="https://n1.sdlcdn.com/imgs/k/f/v/12_april_WB_Festive_kurta_sets_WEB_1-9d9b7.jpg"
-                            alt="img4">
-                    </div>
-                    <div class="slide">
-                        <img src="https://n1.sdlcdn.com/imgs/k/f/v/12_april_WB_Kitchen_Essentials_WEB-cca82.jpg"
-                            alt="img5">
-                    </div>
-                </div>
-                <div class="navigation">
-                    <label for="r1" class="bar">BOB</label>
-                    <label for="r2" class="bar">Health</label>
-                    <label for="r3" class="bar">Westernwear</label>
-                    <label for="r4" class="bar">Kurta Sets</label>
-                    <label for="r5" class="bar">Kitchen Needs</label>
-                </div>
+        <div id="slideShow">
+            <div id="slideShowImage">
             </div>
+            <div id="slideShowNav">
+                <a href="">BOB</a>
+                <a href="">Health</a>
+                <a href="">Westernwear</a>
+                <a href="">Kurta Sets</a>
+                <a href="">Kitchen Need</a>
+            </div>
+            <!-- ISSUE -->
+            <div class="RecentlyViewed">
+                <div id="RecentlyVProducts">
+                    <h3>RECENTLY VIEWED PRODUCTS</h3>
+                    <div id="RecentlyCards"></div>
 
-            <div id="slider2">
-                <h3>RECENTLY VIEWED PRODUCTS</h3>
+                </div>
             </div>
         </div>
+        <div id="CartDisplay">
+            <!-- Append here only two Cart products -->
+            <p>Your Cart</p>
+            <small>There are 2 items in your cart</small>
+            <div>
+                <div class="card">
+                    <div>
+                        <img src="https://n4.sdlcdn.com/imgs/i/n/r/130x152/bhawna-collection-Loard-Shiv-Trishul-SDL890408077-1-86933.jpeg" alt="">
+                    </div>
+                    <div>
+                        <h5>Bhawna Collection</h5>
+                        <p>Rs 158</p>
+                        <P class="Buynow">BUY NOW</P>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <img src="https://n4.sdlcdn.com/imgs/i/5/b/130x152/FURO-By-Red-Chief-WB10005-SDL259042328-1-04ab1.jpeg" alt="">
+                    </div>
+                    <div>
+                        <h5>Nike Black Shoes</h5>
+                        <p>Rs 158</p>
+                        <P class="Buynow">BUY NOW</P>
+                    </div>
+                </div>
+                <button>VIEW ALL</button>
+            </div>
+        </div>
+    </div>
+    <div id="Qrcode">
+        <img src="./image/SnapdealQR.png" alt="">
     </div>
     <div class="tranding">
         <h3>TRENDING PRODUCTS</h3>
@@ -226,5 +953,7 @@
         </div>
     </footer>
 </body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </html>
 <script src="./index.js"></script>
