@@ -113,3 +113,48 @@
     left: -105px;
     
   }
+
+
+  .popup{
+   position: absolute;
+   background-color: #E40046;
+   height: 500px;
+   width: 30%;
+   border-radius: 10px ;
+   text-align: center;
+
+   top: 0;
+   left: 50%;
+   transform: translate(-50% , -50%) scale(0.1);
+   visibility: hidden;
+   transition: transform 0.4s , top 0.4s;
+}
+.openpopup{
+   visibility: visible;
+   top: 50%;
+   transform: translate(-50% , -50%) scale(1);
+}
+.popup>h1{
+   padding-top: 50px;
+   font-family: serif;
+   font-size: 50px;
+}
+.popup h3{
+   font-family: serif;
+   font-size: 30px;
+}
+#otpInput input{
+   width: 50px;
+   height: 50px;
+   font-size: 50px;
+   text-align: center;
+   border: 0px;
+}
+#otpButton{
+   margin-top: 20px;
+   width: 30%;
+   height: 40px;
+   cursor: pointer;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   border-radius: 5px;
+}

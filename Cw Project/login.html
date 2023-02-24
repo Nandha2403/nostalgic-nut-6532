@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./login.css">
+    <script src="https://kit.fontawesome.com/de93c32e9b.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div>
+        <div id="container">
+            <img src="./image/Screenshot_20230224_173452.png" alt="">
+            <form action="" id="form">
+                <p id="heading">Login/Sign Up On Snapdeal</p>
+                <p class="pTag" id="line">Please provide your Mobile Number or Email to Login/ Sign Up on Snapdeal</p>
+                <input type="email" type="number" placeholder="Mobile Number/ Email" class="input" id="num_input"><br>
+                <p id="alert">Please enter your mobile number or email</p>
+                <input type="password" id="password" placeholder="Password">
+                <input type="submit" class="input" value="CONTINUE" id="Continue_btn">
+                <p class="pTag" id="divider">or Login Using</p>
+                <button id="google"><i class="fab fa-google fa-1x" id="google_icon"></i>Google</button>
+            </form>
+        </div>
+    </div>
+    <div id="popup" class="popup">
+        <h1>OTP VARIFICATION</h1>
+        <h3>YOUR OTP IS:- <span id="otp">0000</span></h3> 
+        
+        <div id="otpInput">
+            <h3>Enter Your OTP</h3>
+            <input type="number" id="otpInput1">
+            <input type="number" id="otpInput2">
+            <input type="number" id="otpInput3">
+            <input type="number" id="otpInput4">
+        </div>
+        <button id="otpButton">Submit</button>
+    </div>
+</body>
+<script src="./login.js"></script>
+</html>
