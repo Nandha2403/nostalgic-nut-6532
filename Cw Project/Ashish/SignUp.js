@@ -22,8 +22,10 @@ let LSdata = localStorage.getItem("MobileNumber")
 // Event Listner 
 
 window.addEventListener("load",()=>{
-    console.log(LSdata)
+    // console.log(LSdata)
     num_input.value = LSdata
+    alert('0591')
+
 })
 
 
@@ -32,19 +34,15 @@ Continue_btn.addEventListener("click",(e)=>{
 
     if(email_input.value == ""){
         email_alert.style.display = "block"
-        console.log("right")
     }
     if(name_input.value == ""){
         name_alert.style.display = "block"
-        console.log("right")
     }
     if(dob_input.value == ""){
         dob_alert.style.display = "block"
-        console.log("right")
     }
     if(password_input.value == "" ||  password_input.value.length < 6){
         password_alert.style.display = "block"
-        console.log("right")
     }
 
     // for proceed to final
@@ -55,8 +53,17 @@ Continue_btn.addEventListener("click",(e)=>{
         dob_alert.style.display = "none"
         password_alert.style.display = "none"
 
-        AddUserToServer()
+        // AddUserToServer()
+        let obj = {
+            Number: num_input.value, 
+            Email: email_input.value,
+            Name: name_input.vallue,
+            DOB: dob_input.value,
+            Password: password_input.value
+        }
+        localStorage.setItem("userInformation",JSON.stringify(obj))
         alert("done")
+        window.open("http://127.0.0.1:5500/Cw%20Project/Ashish/otp.html?","_self");
     }   
 })
 
@@ -72,9 +79,8 @@ async function AddUserToServer (){
             DOB: dob_input.value,
             Password: password_input.value
         }
-        let res = await fetch(`./UserInformation.json`,{
+        let res = await fetch(`http://localhost:3000/users`,{
             method: "POST",
-             
             headers: {
                 'Content-Type' : 'application/json'
             },
@@ -84,6 +90,6 @@ async function AddUserToServer (){
         console.log(data) 
         
     } catch (error) {
-        console.log(error)
+        console.log('error')
     }
 }
