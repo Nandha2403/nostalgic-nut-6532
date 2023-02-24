@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="SignUp.css">
+    <script src="https://kit.fontawesome.com/de93c32e9b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="container">
+        <form action="" id="form">
+            <p id="heading">Sign Up</p>
+            <p class="pTag" id="line">Create an account on Snapdeal</p>
+
+            <input type="text" placeholder="Mobile Number/ Email" class="input" id="num_input"><br>
+
+            <input type="email" placeholder="Email" class="input" id="email_input"><br>
+            <p class="alert" id="email_alert">Please enter an email</p>
+
+            <input type="text" placeholder="Name" class="input" id="name_input"><br>
+            <p class="alert" id="name_alert">Please enter your name</p>
+
+            <input type="date" placeholder="DOB 25/11/1990" class="input" id="dob_input"><br>
+            <p class="alert" id="dob_alert">Please enter a valid date</p>
+
+            <input type="password" placeholder="password" class="input" id="password_input"><br>
+            <p class="alert" id="password_alert">Please enter a password</p>
+
+            
+            <p class="instruction">Password should have a minimum of 6 characters, at least 1 numeric and 1 alphabet</p>
+            <label>
+            <input type="checkbox" checked> <span id="keep">Keep me logged in</span> 
+            </label>
+            <input type="submit" class="input" value="CONTINUE" id="Continue_btn">
+            <div class="instruction" id="term">By registering, I agree to <a href="https://www.snapdeal.com/page/terms-of-sale" target="_blank" id="link">Terms & Conditons</a>
+            </div>
+            <p class="pTag" id="divider">or Login Using</p>
+            <button id="google"><i class="fab fa-google fa-1x"></i>Google</button>
+        </form>
+    </div> 
+</body>
+<script src="./SignUp.js"></script>
+</html>
+
+

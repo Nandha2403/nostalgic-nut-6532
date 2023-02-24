@@ -1,0 +1,121 @@
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+   
+}
+#container {
+    border: dashed 2px green;
+    padding: 150px 0 150px 0;
+    background-color: #e9eef4;  
+}
+#form {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* border: solid 1px black; */
+    background-color: #FFFFFF;
+    width: 23%;
+    margin:auto;
+    border-radius: 8px;
+    padding: 5px 25px 0 25px ;   
+}
+#heading {
+    font-size: 18px;
+    letter-spacing: .20px;
+
+}
+
+ .pTag {
+    font-size: 12px;
+    line-height: 15px;
+    color: rgb(91, 95, 96);
+ }
+ #alert {
+    font-size: 12px;
+    line-height: 15px;
+    margin: 7px 0 0 0;
+    color:#ea4335;
+    display: none;
+ }
+ #alert2{
+    font-size: 12px;
+    line-height: 15px;
+    margin: 7px 0 0 0;
+    color:#ea4335;
+    display: none;
+ }
+ .input {
+    height: 40px;
+    width: 100%;
+    border-radius: 3px;
+    padding: 8px 16px 8px 16px;
+    border:  1px solid #D8E2EF;
+    margin: 10px 0 0 0;
+    font-size: 12.5px;
+    letter-spacing: .5px;
+}
+
+ #Continue_btn {
+    height: 40px;
+    width: 100%;    
+    color: #FFFFFF;
+    background-color: #E40046;
+    border: 0px;
+    margin: 20px 0 30px 0;
+    border-radius: 3px;
+    font-weight: 600;
+    cursor: pointer;
+ }
+ #Continue_btn:hover{
+    background-color: #D32F2F;
+ }
+
+
+
+
+  /* For otp section */
+
+  #div{
+    /* border: dashed 1px blueviolet; */
+
+  } 
+#lock_icon{
+    color: #d87f30;
+    font-size: 80px;
+    margin: 20px 0 20px 0;
+    position: relative;
+    right: 50px;
+    left: 105px;
+}
+
+  #otp_input{
+    width: 50%;
+    text-align: center;
+    height: 35px;
+    margin: 20px 0 0 0;
+    border-radius: 1px;
+    font-size: 13px;
+    border:  2px;
+    letter-spacing: .5px;
+    background-color: #f0f0f0;
+    border: 1px solid #D8E2EF;
+    position: inherit;
+  }
+     
+#num_input_otp{
+    height: 40px;
+    width: 80%;
+    border-radius: 3px;
+    padding: 8px 16px 8px 16px;
+    margin: -5px 0 0 0;
+    font-size: 12.5px;
+    letter-spacing: .5px;
+    border: dashed 2px #D8E2EF;
+    align-items: center;
+}
+
+#resend{
+    color:  rgb(43, 167, 215);
+}
+ #inputs{
+    /* border: dashed 1px blueviolet; */
+    text-align: center;
+ }

@@ -1,0 +1,42 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "Number": "564683214651",
+      "Email": "email@fjfjk",
+      "Name": "Akash",
+      "DOB": "08/12/2000",
+      "Password": "123456"
+    },
+    {
+      "Number": "7011458245",
+      "Email": "ashishsen9997@gmail.com",
+      "DOB": "2023-12-31",
+      "Password": "123456",
+      "id": 2
+    },
+    {
+      "Number": "7011458245",
+      "Email": "ashishsen9997@gmail.com",
+      "DOB": "2023-12-31",
+      "Password": "123456",
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
