@@ -3,19 +3,30 @@
     box-sizing: border-box;
    
 }
+body{
+    margin: 0px;
+    padding: 0px;
+}
 #container {
-    /* border: dashed 2px green; */
-    padding: 150px 0 150px 0;
-    background-color: #e9eef4;  
+    height: 100vh;
+    background-color: #E40046;  
+    display: flex;
+    padding: 4%;
+    margin-left: -120px;
+}
+#container>img{
+    width: 35%;
+    margin-left: 10%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
 }
 #form {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    /* border: solid 1px black; */
     background-color: #FFFFFF;
-    width: 23%;
-    margin:auto;
-    border-radius: 8px;
-    padding: 5px 25px 0 25px ;   
+    width: 50%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 10% 18% 0px 15% ;   
 }
 #heading {
     font-size: 18px;
@@ -35,7 +46,7 @@
     color:#ea4335;
     display: none;
  }
- .input {
+ .input,#password {
     height: 40px;
     width: 100%;
     border-radius: 3px;
@@ -88,7 +99,8 @@
 
   #google_icon{
     position:relative;
-    left: -105px;
+    text-align: center;
+    margin-right: 10px;
     
   }
 
@@ -101,31 +113,51 @@
     width: 50%;
 }
 
-  /* #otp_input{
-    width: 50%;
-    text-align: center;
-    height: 35px;
-    margin: 20px 0 0 0;
-    border-radius: 1px;
-    font-size: 13px;
-    border:  2px;
-    letter-spacing: .5px;
-    background-color: #f0f0f0;
-    border: 1px solid #D8E2EF;
-  } */
-/*     
-#num_input_otp{
-    height: 40px;
-    width: 100%;
-    border-radius: 3px;
-    padding: 8px 16px 8px 16px;
-    margin: -5px 0 0 0;
-    font-size: 12.5px;
-    letter-spacing: .5px;
-    border: dashed 2px #D8E2EF;
-}
 
-#resend{
-    color:  rgb(43, 167, 215);
-}
- */
+
+ .popup{
+    position: absolute;
+    background-color: #E40046;
+    height: 500px;
+    width: 30%;
+    border-radius: 10px ;
+    text-align: center;
+ 
+    top: 0;
+    left: 50%;
+    transform: translate(-50% , -50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.4s , top 0.4s;
+ }
+ .openpopup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50% , -50%) scale(1);
+ }
+ .popup>h1{
+    padding-top: 50px;
+    font-family: serif;
+    font-size: 40px;
+ }
+ .popup h3{
+    font-family: serif;
+    font-size: 30px;
+ }
+ #otpInput input{
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    text-align: center;
+    border: 0px;
+   border-radius: 5px;
+ }
+ #otpButton{
+    margin-top: 20px;
+    width: 30%;
+    height: 40px;
+    cursor: pointer;
+    background-color: white;
+    border: 0px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 5px;
+ }
