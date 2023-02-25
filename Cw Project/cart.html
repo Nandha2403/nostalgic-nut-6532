@@ -10,7 +10,7 @@
 <body>
     <div id="container">
        <div id="first">
-            <h3>Shopping Cart</h3>
+            <!-- <h3>Shopping Cart</h3> -->
        </div>
 
        <div id="second">
@@ -18,10 +18,12 @@
             <div>Price</div>
             <div>Quantity</div>
             <div>Delivery with Charges
-                <input type="text" placeholder="Pincode">
-                <button id="check">CHECK</button>
+                <!-- <input type="text" placeholder="Pincode" id="pincode"> -->
+                <!-- <p id="showpin"></p> -->
+                <!-- <button id="check">CHECK</button> -->
             </div>
             <div>Subtotal</div>
+            <div>Remove</div>
        </div>
 
        <div id="third">
@@ -37,16 +39,16 @@
 
         <div id="footer_child">
             <div class="span">
-            <div>Sub Total: </div> <span >Rs. <span id="grandtotal">0</span></span>
+            <!-- <div>Sub Total: </div> <span >Rs. <span >0</span></span> -->
             </div>
             <div class="span">
-            <div>Delivery Charges:</div><span >FREE</span>
+            <div>Delivery Charges:</div><span style="color: green;">FREE</span>
             </div>
         </div>
         
         <div>
-            <button>
-                PROCEED TO PAY RS. <span>0</span>
+            <button id="payment">
+                PROCEED TO PAY RS. <span id="grandtotal" style="color: #FFFFFF">0</span>
             </button>
         </div>
     </div>

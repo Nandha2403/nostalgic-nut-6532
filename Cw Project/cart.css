@@ -2,24 +2,28 @@
     font-family: sans-serif;
     box-sizing: border-box;
     color: #6b6a6a;
-    font-size: 18px;
+    font-size: 15px;
+}
+#first{
+    /* background-color: #E40026; */
+    /* margin: auto; */
 }
 
 #first > h3{
-    font-size: larger;
-    color: #E40046;
-    padding-left:60px ;
-
+    font-size: 22px;
+    color: #222222;
+    margin: auto;
+    padding-left:20px ;
 }
 
 #second{
-    background-color:rgb(197, 201, 205);
+    background-color: #E40046;
     height: 70px;
     /* border: 1px solid red; */
     justify-content: space-between;
     display: flex;
     align-items: center;
-    padding: 0 15px 0 15px;
+    padding: 0px 15px 0 15px;
 }
 
 #second div{
@@ -27,6 +31,7 @@
     /* height: 100%; */
     /* margin: auto; */
     margin: auto;
+    color: #FFFFFF
 
 }
 #third{
@@ -35,7 +40,7 @@
 
 #third_child{ 
     /* border: 1px dashed red; */
-    border-bottom: 1px solid #6b6a6a;
+    border-bottom: 1px solid #222222;
     display: flex;
     justify-content: space-between;
     padding: 15px 15px 15px 15px;
@@ -57,6 +62,17 @@
 .options{
     height: 40px;
 }
+
+.free{
+    color: rgb(45, 168, 45);
+    margin-left: 5px;
+}
+/* .rs{
+    display: flex;
+} */
+/* #footer_free{
+    color: green;
+} */
 
 #details{
     display: flex;
@@ -105,7 +121,7 @@
     /* padding: 0 8px 0 30px; */
     width:22%;
     text-align: center;
-
+    /* border: 1px solid red; */
 }
 #second > div > input{
     /* background-color: aqua; */
@@ -116,6 +132,20 @@
     border: 1px solid #999999;
     font-size: 15px;
     border-radius: 4px;
+}
+#showpin{
+    display: none;
+    border:  1px solid black;
+    /* border: 1px  ; */
+    color: red
+}
+#showpin{
+    width:65px;
+    /* height: 25px;
+    text-align: center;
+    border: 1px solid #999999;
+    font-size: 15px;
+    border-radius: 4px; */
 }
 #second > div > button{
     width:65px;
@@ -128,6 +158,7 @@
     font-size: 15px;
     border-radius: 4px;
     margin-left: 5px;
+    
 }
 #second div:nth-child(5){
     margin: 47px;
@@ -145,9 +176,11 @@
 #third_child > div:nth-child(2){
     padding: 0 0 0 0;
     /* background-color: blue; */
-    width: 5%;
+    width: 3.5%;
     text-align: center;
-    
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
 }
 #third_child div:nth-child(3){
     padding: 0 8px 0 30px; 
@@ -161,14 +194,26 @@
 
 }
 #third_child div:nth-child(5){
-    padding: 0 0 0  0;  
-    width: 5%;
+    padding: 0 0 0 0;  
+    width: 3.5%;
     text-align: center; 
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
 
+    /* border: 1px solid rebeccapurple  */
+}
+#remove{
+    height: 25px;
+    border-radius: 10px;
+    /* padding-left: 8px; */
+    border: 1px solid #999999;
+    background-color: #FFFFFF;
 }
 
-
-
+#grandtotal{
+    color:#FFFFFF
+}
 
 /*  FOOTER */
 
