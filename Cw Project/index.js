@@ -1,3 +1,13 @@
+let name = localStorage.getItem("userName")
+
+if(name){
+    let singin = document.querySelector(".singin>h4")
+    singin.innerText=name
+    let icon = document.querySelector(".singin>ion-icon")
+    icon.style.display = "none"
+}
+// image.setAttribute("text" , name[0])
+
 let trandingProducts = document.getElementById("trandingProducts")
 
 let productsData = [
@@ -194,3 +204,10 @@ let RecentProductsArr = [
             RecentlyCards.append(div)
         }
     }
+
+
+    let logo=document.getElementById("logo")
+    logo.addEventListener("click",(e)=>{
+        e.preventDefault();
+        window.location.href="./ProductPage.html"
+    })

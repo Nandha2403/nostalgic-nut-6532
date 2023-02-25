@@ -2,18 +2,31 @@
     font-family: sans-serif;
     box-sizing: border-box;
 }
+body{
+   margin: 0px;
+   padding: 0px;
+}
 #container {
-    /* border: solid 2px green; */
-    margin: auto;
-    background-color: #e9eef4;  
+   height: 100vh;
+   background-color: #E40046;  
+   display: flex;
+   padding: 2%;
+   padding-left: 5%;
+   
+}
+#container>img{
+   width: 35%;
+   margin-left: 10%;
+   border-top-left-radius: 8px;
+   border-bottom-left-radius: 8px;
 }
 #form {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     /* border: solid 1px black; */
     background-color: #FFFFFF;
-    width: 23%;
-    margin:auto;
-    border-radius: 8px;
+    width: 28%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
     padding: 5px 25px 0 25px;
 
 }
@@ -23,10 +36,16 @@
 
 }
 
- .pTag {
-    font-size: 12px;
-    color: rgb(91, 95, 96);
- }
+.pTag {
+   font-size: 12px;
+   line-height: 15px;
+   color: rgb(91, 95, 96);
+   text-align: center;
+}
+.pTag~h4{
+  text-align: center;
+}
+
  .instruction{
     color: #777c82;
     font-size: 10.5px;
@@ -86,33 +105,19 @@
     text-decoration: none;
     color: rgb(43, 167, 215);
  }
-#google {
-    height: 40px;
-    width: 100%;    
-    color: rgb(91, 95, 96);
-    background-color: #FFFFFF;
-    border: 0px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    margin: 20px 0 60px 0;
-    border-radius: 3px;
-    font-size: 12px;
-    cursor: pointer;
-    /* text-align: center; */
+ #google {
+   height: 40px;
+   width: 100%;    
+   color: rgb(91, 95, 96);
+   background-color: #FFFFFF;
+   border: 0px;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   /* margin: 20px 0 60px 0; */
+   border-radius: 3px;
+   font-size: 12px;
+   cursor: pointer;
+   font-size: 17px;
 }
-
-.fa-google {
-    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
-  }
-
-  i{
-    position:relative;
-    left: -105px;
-    
-  }
 
 
   .popup{
@@ -157,4 +162,18 @@
    cursor: pointer;
    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
    border-radius: 5px;
+}
+@media (max-width:991px){
+   #container{
+      padding-left: 20%
+   }
+   #container>img{
+      display: none;
+   }
+   #form{
+      /* padding: 5px 25px 0 25px; */
+      width: 50%;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+   }
 }

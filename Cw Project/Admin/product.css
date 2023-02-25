@@ -575,3 +575,15 @@ body{
 #addForm input{
     padding: 2%;
 }
+
+#delete{
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    padding: 12%;
+    cursor: pointer;
+}
+#delete:hover{
+    background-color: white;
+    color: #222;
+}
