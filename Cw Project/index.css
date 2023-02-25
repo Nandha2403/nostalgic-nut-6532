@@ -2,6 +2,12 @@ body{
     margin: 0px;
     padding: 0px;
     background-color: rgb(247, 247, 247);
+    margin-top: 90px;
+}
+body>nav{
+    position: fixed;
+    width: 100%;
+    margin-top: -90px;
 }
 #topnav{
     /* position: fixed; */
@@ -301,6 +307,11 @@ body{
 .tags>div a:hover{
     text-decoration: underline;
     color: #000;
+}
+#totop{
+    position: absolute;
+    margin-left: 92%;
+    margin-top: -50px;
 }
 footer{
     background-color: white;
