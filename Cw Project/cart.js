@@ -96,13 +96,13 @@ let totalpriceofproduct = document.getElementById("totalpriceofproduct")
 for(let i=0; i<filter.length; i++){
     let itemvalue = filter[i]
         itemvalue.addEventListener("change",(e)=>{
-        // console.log(+e.target.value)
+        console.log(+e.target.value)
 
-        // for(let j=0; j<price.length; j++){
-        //     let product = price[j]
-        //     console.log(+price[j].innerText)
-        //     product.addEventListener("click",(p)=>{
-        //     })
+        for(let j=0; j<price.length; j++){
+            let product = price[j]
+            console.log(+price[j].innerText)
+            product.addEventListener("click",(p)=>{
+            })
 
         totalpriceofproduct.innerText = +e.target.value*+price.innerText
         grandtotal.innerText = +e.target.value*+price.innerText   
