@@ -1,0 +1,245 @@
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+    color: #6b6a6a;
+    font-size: 18px;
+}
+
+#first > h3{
+    font-size: larger;
+    color: #E40046;
+    padding-left:60px ;
+
+}
+
+#second{
+    background-color:rgb(197, 201, 205);
+    height: 70px;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 0 15px 0 15px;
+}
+
+#second div{
+    /* border: 1px dashed red; */
+    /* height: 100%; */
+    /* margin: auto; */
+    margin: auto;
+
+}
+#third{
+    /* border: 1px solid red; */
+}
+
+#third_child{ 
+    /* border: 1px dashed red; */
+    border-bottom: 1px solid #6b6a6a;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px 15px 15px;
+    margin-bottom: 20px;
+}
+
+#third_child div{
+    /* border: 1px dashed red; */
+    margin: auto;
+}
+
+#filter{
+    width: 80%;
+    height: 40px;
+    border-radius: 15px;
+    padding-left: 8px;
+}
+
+.options{
+    height: 40px;
+}
+
+#details{
+    display: flex;
+    width: 35%;
+}
+
+#details div:nth-child(1){
+    padding: 0 8px 0 30px;
+}
+#details div:nth-child(2){
+    padding: 0 20px 0 20px;
+}
+
+#details div p:nth-child(2){
+    padding: 0 0 0 0;
+    color:#999999;
+    font-size: 17px;
+}
+
+#second div:nth-child(1){
+    /* margin: 47px; */
+    /* background-color: aqua; */
+    /* padding: 0 8px 0 30px; */
+    width: 35%;
+}
+#second div:nth-child(2){
+    /* margin: 47px; */
+    /* background-color: aqua; */
+    /* padding: 0 8px 0 30px; */
+    width: 5%;
+    text-align: center;
+
+
+}
+#second div:nth-child(3){
+    /* margin: 47px; */
+    /* background-color: aqua; */
+    /* padding: 0 8px 0 30px; */
+    width:5%;
+    text-align: center;
+
+}
+#second div:nth-child(4){
+    /* margin: 47px; */
+    /* background-color: aqua; */
+    /* padding: 0 8px 0 30px; */
+    width:22%;
+    text-align: center;
+
+}
+#second > div > input{
+    /* background-color: aqua; */
+    /* padding: 0 8px 0 30px; */
+    width:65px;
+    height: 25px;
+    text-align: center;
+    border: 1px solid #999999;
+    font-size: 15px;
+    border-radius: 4px;
+}
+#second > div > button{
+    width:65px;
+    height: 25px;
+
+    text-align: center;
+    background-color: #151414;
+    color: aliceblue;
+    border: 1px solid #999999;
+    font-size: 15px;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+#second div:nth-child(5){
+    margin: 47px;
+    /* background-color: aqua; */
+    padding: 0 8px 0 30px;
+    width:5%;
+    text-align: center
+
+}
+
+#third_child div:nth-child(1){
+    padding: 0 8px 0 0;
+
+}
+#third_child > div:nth-child(2){
+    padding: 0 0 0 0;
+    /* background-color: blue; */
+    width: 5%;
+    text-align: center;
+    
+}
+#third_child div:nth-child(3){
+    padding: 0 8px 0 30px; 
+    width: 7%;
+    text-align: center;
+}
+#third_child div:nth-child(4){
+    padding: 0 0 0 30px;
+    width:22%;
+    text-align: center;
+
+}
+#third_child div:nth-child(5){
+    padding: 0 0 0  0;  
+    width: 5%;
+    text-align: center; 
+
+}
+
+
+
+
+/*  FOOTER */
+
+#footer{
+    background-color: #222222;
+    padding: 25px 0 25px 0;
+    font-size: 12px;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+
+#footer button{
+    width: 300px;
+    height: 60px;
+    background-color: #E40046;
+    border: 0px;
+    color: #FFFFFF;
+    /* padding: 0 20px 0 20px; */
+    border-radius: 3px;
+}
+
+
+#footer div{
+    /* border: 1px dashed red; */
+    margin: auto;
+    
+}
+#footer div, #footer span {
+    color: #BBBBBB;
+    
+}
+#footer  p{
+    color: #BBBBBB;
+}
+
+#footer p:nth-child(2){
+    font-size: medium;
+    padding-left: 3px;
+}
+
+#footer p:nth-child(3){
+    font-size: medium;
+    padding-left: 3px;
+
+}
+#footer_child div{
+    font-size: 18px;
+    /* border: 1px solid pink;  */
+    /* justify-content: space-between; */
+}
+
+#footer span{
+    font-size: 18px;
+    text-align: left;
+    /* justify-content: space-between; */
+
+}
+
+#footer_child{
+    width: 20%;
+    
+}
+
+.span div :nth-child(1){
+    color: gold;
+}
+
+.span{
+    /* justify-content: space-between ; */
+    display: flex;
+} 
