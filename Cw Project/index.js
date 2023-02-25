@@ -204,3 +204,10 @@ let RecentProductsArr = [
             RecentlyCards.append(div)
         }
     }
+
+
+    let logo=document.getElementById("logo")
+    logo.addEventListener("click",(e)=>{
+        e.preventDefault();
+        window.location.href="./ProductPage.html"
+    })

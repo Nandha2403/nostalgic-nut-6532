@@ -50,6 +50,7 @@ body>nav{
 }
 #logo{
     margin-left: 5%;
+    cursor: pointer;
 }
 #logo img{
     margin-top: 10px;
