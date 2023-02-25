@@ -3,9 +3,9 @@ let Continue_btn = document.getElementById("Continue_btn")
 let num_input = document.getElementById("num_input")
 let LSdata = JSON.parse(localStorage.getItem("userInformation")) || []
 let password = document.getElementById("password")
+let admin = document.getElementById("admin")
 
-
-
+let userName ;
 Continue_btn.addEventListener("click" , (e)=>{
     let done = true
     e.preventDefault()
@@ -13,6 +13,7 @@ Continue_btn.addEventListener("click" , (e)=>{
         let item= LSdata[i]
 
         if((item.Number == num_input.value || item.Email == num_input.value) && item.Password == password.value){
+            userName = item.Name
             done=false
             let popup = document.getElementById("popup")
             popup.classList.add("openpopup")
@@ -35,7 +36,16 @@ Continue_btn.addEventListener("click" , (e)=>{
                     if(otpInput == otpNumber){
                         popup.classList.remove("openpopup")
                         
-                        window.location.href = "index.html"
+                        if(admin.value == 9302){
+                            
+                            window.localStorage.setItem('userName' , userName)
+                            window.location.href = "Admin/dashboard.html"
+                            alert("working")
+                        }else{
+                            
+                            window.localStorage.setItem('userName' , userName)
+                            window.location.href = "index.html"
+                        }
                         
                     }else{
                         alert("Enter The Correct OTP")
