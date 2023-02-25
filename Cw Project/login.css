@@ -67,7 +67,7 @@ body{
     color: #FFFFFF;
     background-color: #E40046;
     border: 0px;
-    margin: 20px 0 0 0;
+    margin: 1% 0 0 0;
     border-radius: 3px;
     font-weight: 600;
     cursor: pointer;
@@ -160,4 +160,18 @@ body{
     border: 0px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 5px;
+ }
+
+ @media (max-width:991px){
+    #container{
+       padding-left: 20%
+    }
+    #container>img{
+       display: none;
+    }
+    #form{
+       width: 50%;
+       border-top-left-radius: 8px;
+       border-bottom-left-radius: 8px;
+    }
  }
