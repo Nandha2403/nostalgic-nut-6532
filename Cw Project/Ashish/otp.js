@@ -8,7 +8,7 @@ let otpvalue;
 
 window.addEventListener("load",()=>{
     // console.log(LSdata)
-    LSdata = num_input_otp.value
+    LSdata = snum_input_otp.value
     // otpvalue = 
     console.log(OTP())
     alert('0591')
