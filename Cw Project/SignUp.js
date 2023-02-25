@@ -20,10 +20,15 @@ let password_alert = document.getElementById("password_alert")
 let LSdata = JSON.parse(localStorage.getItem("userInformation")) || []
 
 
+let google = document.getElementById("google")
+google.addEventListener("click" , (e)=>{
+    e.preventDefault()
+    window.location.href = "login.html"
+    
+})
 
 
-
-
+let userName ;
 Continue_btn.addEventListener("click" , (e)=> {
     e.preventDefault()
 
@@ -67,10 +72,11 @@ Continue_btn.addEventListener("click" , (e)=> {
                                 password_alert.style.display = "none"
                         
                                 // AddUserToServer()
+                                userName = name_input.value
                                 let obj = {
                                     Number: num_input.value, 
                                     Email: email_input.value,
-                                    Name: name_input.vallue,
+                                    Name: name_input.value,
                                     DOB: dob_input.value,
                                     Password: password_input.value
                                 }
@@ -79,6 +85,7 @@ Continue_btn.addEventListener("click" , (e)=> {
                                 console.log(LSdata)
                                 if(checkbox.checked){
                                     window.location.href = "./index.html"
+                                    window.localStorage.setItem('userName' , userName)
                                 }else{
                                     window.location.href = "login.html"
                                 }
