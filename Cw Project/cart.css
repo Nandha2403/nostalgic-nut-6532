@@ -85,6 +85,15 @@
     width: 35%;
 }
 
+#details > div > img{
+    width: 40%;
+    border: 1px solid red;
+}
+
+#details div{
+    border: 1px solid red
+}
+
 #details div:nth-child(1){
     padding: 0 8px 0 30px;
 }
