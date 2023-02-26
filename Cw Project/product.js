@@ -1,5 +1,7 @@
 let addBtn = document.getElementById("addBtn");
 let addForm = document.getElementById("addForm");
+let searchbtn = document.querySelector(".search form");
+
 
 addBtn.addEventListener("click", function () {
     document.querySelector(".popup").style.display = "block";
@@ -53,6 +55,11 @@ async function getRequest(){
     let data = await response.json();
     console.log(data);
     display(data);
+
+    searchbtn.addEventListener("submit",(e)=>{
+        e.preventDefault();
+        searchData(data)
+    })
 }
 
 getRequest();
@@ -98,4 +105,19 @@ function display(data){
         tr.append(td1,td2,td3,td4)
         tbody.append(tr);
     });
+}
+
+// js for search part
+let searchValue = document.getElementById("search");
+function searchData(data) {
+    let filtred = data.filter((element, index) => {
+        if (element.title.toLowerCase().includes(searchValue.value.toLowerCase())) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    });
+    // document.querySelector(".center").style.display = "none";
+    display(filtred)
 }

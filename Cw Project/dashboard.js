@@ -1,3 +1,4 @@
+
 // adding hovered class in selected list item
 
 let list = document.querySelectorAll(".navigation li");
@@ -20,3 +21,9 @@ toggle.onclick = function(){
     navigation.classList.toggle('active');
     main.classList.toggle('active')
 }
+
+// signout
+// let signout = document.getElementById("signout");
+// signout.addEventListener("click",()=>{
+//     window.open("./login.html")
+// })
