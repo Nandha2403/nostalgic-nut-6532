@@ -55,3 +55,10 @@ Continue_btn.addEventListener("click" , (e)=>{
         }
     }
 })
+
+let google = document.getElementById("google")
+google.addEventListener("click" , (e)=>{
+    e.preventDefault()
+    window.location.href = "SignUp.html"
+    
+})
