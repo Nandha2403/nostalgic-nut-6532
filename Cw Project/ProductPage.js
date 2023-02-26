@@ -51,11 +51,30 @@ function display(data){
         AddtoCartBtn.addEventListener("click",(e)=>{
             e.preventDefault();
             if(CheckCart(el.id)){
-                alert("Product Already in the cart")
+                // create and append the alert element
+                const alertEl = document.createElement("div");
+                alertEl.classList.add("alert");
+                alertEl.textContent = "Product Already in the cart";
+                document.body.appendChild(alertEl);
+
+                // remove the alert after 1 second
+                setTimeout(function() {
+                alertEl.remove();
+                }, 1500);
+
             }else{
                 LSdata.push(el);
             localStorage.setItem("cart",JSON.stringify(LSdata));
-            alert("Product Added to Cart")
+            // create and append the alert element
+            const alertEl = document.createElement("div");
+            alertEl.classList.add("alert");
+            alertEl.textContent = "Product Added to Cart";
+            document.body.appendChild(alertEl);
+
+            // remove the alert after 1 second
+            setTimeout(function() {
+            alertEl.remove();
+            }, 2000);
             display(data)
             }
             
@@ -81,4 +100,24 @@ let logo=document.getElementById("logo");
 logo.addEventListener("click",(e)=>{
     e.preventDefault();
     window.location.href="./index.html"
+})
+
+
+let name = localStorage.getItem("userName")
+
+if(name){
+    let singin = document.querySelector(".singin>h4")
+    singin.innerText=name
+    let icon = document.querySelector(".singin>ion-icon")
+    icon.style.display = "none"
+    let div = document.querySelector(".singin")
+    div.addEventListener("click" , (e)=>{
+        window.location.href = "index.html"
+    })
+}
+
+let cartSpan = document.querySelector(".cart span")
+window.addEventListener("load" , (e)=>{
+    let cart = JSON.parse(localStorage.getItem("cart")) || []
+    cartSpan.innerText = cart.length
 })

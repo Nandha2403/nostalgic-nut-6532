@@ -5,8 +5,16 @@ if(name){
     singin.innerText=name
     let icon = document.querySelector(".singin>ion-icon")
     icon.style.display = "none"
+    let div = document.querySelector(".singin")
+    div.addEventListener("click" , (e)=>{
+        window.location.href = "index.html"
+    })
 }
-// image.setAttribute("text" , name[0])
+let cartSpan = document.querySelector(".cart span")
+window.addEventListener("load" , (e)=>{
+    let cart = JSON.parse(localStorage.getItem("cart")) || []
+    cartSpan.innerText = cart.length
+})
 
 let trandingProducts = document.getElementById("trandingProducts")
 
