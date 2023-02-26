@@ -39,7 +39,7 @@ Continue_btn.addEventListener("click" , (e)=>{
                         if(admin.value == 9302){
                             
                             window.localStorage.setItem('userName' , userName)
-                            window.location.href = "Admin/dashboard.html"
+                            window.location.href = "dashboard.html"
                             alert("working")
                         }else{
                             
