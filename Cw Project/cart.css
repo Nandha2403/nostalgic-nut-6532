@@ -52,6 +52,12 @@
     margin: auto;
 }
 
+.filter{
+    width: 80%;
+    height: 40px;
+    border-radius: 15px;
+    padding-left: 8px;
+}
 #filter{
     width: 80%;
     height: 40px;

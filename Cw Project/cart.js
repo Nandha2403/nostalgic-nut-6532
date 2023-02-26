@@ -106,7 +106,7 @@ for(let i=0; i<filter.length; i++){
 
         totalpriceofproduct.innerText = +e.target.value*+price.innerText
         grandtotal.innerText = +e.target.value*+price.innerText   
-
+        
     })
 }
 
