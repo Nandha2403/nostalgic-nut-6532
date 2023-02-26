@@ -49,7 +49,6 @@ function getitem(img,title,details,price,ratings,id){
             </div>
             <div>
                 <p>${title}</p>
-                <p>${details}</p>
             </div>
         </div>
         <div>
@@ -81,6 +80,14 @@ function getitem(img,title,details,price,ratings,id){
 let remove = document.getElementById("remove")
 let grandtotal = document.getElementById("grandtotal")
 // grandtotal.innerText = price.value  
+window.addEventListener("load",()=>{
+    let p = 0;
+    for(let i of LSdata){
+        p += +i.price
+    }
+    console.log(p)
+    grandtotal.innerText = p
+})
 
 
 let p = 0; 
@@ -116,7 +123,7 @@ for(let i=0; i<filter.length; i++){
                 p += +i.price
             }
             console.log(p)
-            grandtotal.innerText = p   
+            grandtotal.innerText = p* +e.target.value  
         
     })
 }

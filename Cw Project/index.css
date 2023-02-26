@@ -4,6 +4,10 @@ body{
     background-color: rgb(247, 247, 247);
     margin-top: 90px;
 }
+*{
+    font-family: 'Poppins', sans-serif;
+
+}
 body>nav{
     position: fixed;
     width: 100%;
@@ -322,6 +326,10 @@ footer{
     justify-content: space-between;
     border-top: #a1a0a0 1px solid;
 }
+#AllProducts{
+    color: #25a8ed;
+    margin-left: 20px;
+}
 
 /* css  for SlideShow*/
 
@@ -367,7 +375,7 @@ footer{
 /* Small Cart Cart Css */
 #CartDisplay{
     width: 20%;
-    height: 307px;
+    height: 302px;
     margin-left: 10px;
     margin-right: 30px;
     margin-top: 12px; 
@@ -410,7 +418,7 @@ footer{
 
 }
 .category{
-    width: 15%;
+    width: 19%;
     margin-left: 52px;
     color: #333333;
     font-size: 14px;
@@ -422,6 +430,7 @@ footer{
 .category a{
     text-decoration: none;
     color: #333333;
+    margin-left: 5px;
 }
 #SearchImg{
     width: 5%;
@@ -493,9 +502,9 @@ footer{
 #floatbox{
     display: flex;
     position: absolute;
-    left: 242px;
+    left: 264px;
     width: 800px;
-    top: 107px;
+    top: 96px;
     font-size: 14px;
     background-color: white;
     visibility: hidden;

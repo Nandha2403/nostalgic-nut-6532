@@ -6,9 +6,9 @@ if(name){
     let icon = document.querySelector(".singin>ion-icon")
     icon.style.display = "none"
     let div = document.querySelector(".singin")
-    div.addEventListener("click" , (e)=>{
-        window.location.href = "index.html"
-    })
+    // div.addEventListener("click" , (e)=>{
+    //     window.location.href = "index.html"
+    // })
 }
 let cartSpan = document.querySelector(".cart span")
 window.addEventListener("load" , (e)=>{
@@ -214,8 +214,8 @@ let RecentProductsArr = [
     }
 
 
-    let logo=document.getElementById("logo")
-    logo.addEventListener("click",(e)=>{
+    let AllProducts=document.getElementById("AllProducts")
+    AllProducts.addEventListener("click",(e)=>{
         e.preventDefault();
         window.location.href="./ProductPage.html"
     })

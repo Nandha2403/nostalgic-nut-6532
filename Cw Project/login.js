@@ -40,7 +40,7 @@ Continue_btn.addEventListener("click" , (e)=>{
                             
                             window.localStorage.setItem('userName' , userName)
                             window.location.href = "dashboard.html"
-                            alert("working")
+                            // alert("working")
                         }else{
                             
                             window.localStorage.setItem('userName' , userName)

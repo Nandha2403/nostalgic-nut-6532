@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Page</title>
-    <link  rel="icon" href="./image/favicon.png" type="image/x-icon" >
     <link rel="stylesheet" href="ProductPage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link  rel="icon" href="./image/favicon.png" type="image/x-icon" >
 </head>
 <body>
     <nav>
@@ -27,10 +27,10 @@
                 <img src="./qickdeals.png" alt="" >
             </div>
             <div class="middle">
-                <input type="search" placeholder="Search products & brands">
+                <input type="search" id="inputbox" placeholder="Search products & brands">
                 <button id="search"><ion-icon name="search-outline"></ion-icon> Search</button>
             </div>
-            <div class="cart">
+            <div class="cart" onclick="location.href='./cart.html'">
                 <h4>Cart</h4>
                 <ion-icon name="cart-outline" id="Carticon"></ion-icon>
                 <span id="cart_count">0</span>
@@ -46,9 +46,9 @@
         <div id="LeftBox">
             <div id="Pricearange">
                 <h2>Price</h2>
-                <input type="number">
-                <input type="number">
-                <Button>GO</Button>
+                <input id="from" type="number">
+                <input id="To" type="number">
+                <Button id="PricearangeBtn">GO</Button>
             </div>
             <div id="CustomerRating">
                 <h2>CustomerRating</h2>
@@ -120,27 +120,35 @@
                     <input type="checkbox" id="MobileCases" />
                     <span>Mobile Cases</span>
                 </div>
+                <div>
+                    <input type="checkbox" id="Footwear" />
+                    <span>Footwears</span>
+                </div>
+                <div>
+                    <input type="checkbox" id="Bags" />
+                    <span>Bags</span>
+                </div>
             </div>
             <div id="Discout-filter">
                 <h2>Discount</h2>
                 <div>
-                    <input type="checkbox" id="MobileCases" />
+                    <input type="checkbox" id="fifty" />
                     <span>50% or more</span>
                 </div>
                 <div>
-                    <input type="checkbox" id="MobileCases" />
+                    <input type="checkbox" id="fourty" />
                     <span>40% or more</span>
                 </div>
                 <div>
-                    <input type="checkbox" id="MobileCases" />
+                    <input type="checkbox" id="thirty" />
                     <span>30% or more</span>
                 </div>
                 <div>
-                    <input type="checkbox" id="MobileCases" />
+                    <input type="checkbox" id="twenty" />
                     <span>20% or more</span>
                 </div>
                 <div>
-                    <input type="checkbox" id="MobileCases" />
+                    <input type="checkbox" id="ten" />
                     <span>10% or more</span>
                 </div>
             </div>
@@ -151,11 +159,14 @@
                 <select name="Sort" id="Sort">
                     <option value="Relevance">Relevance</option>
                     <option value="PriceLowtoHigh">Price Low to High</option>
-                    <option value="PriceHightoLow">Price Low to High</option>
+                    <option value="PriceHightoLow">Price High to Low</option>
                 </select>
             </div>
             <div id="Products">
                 <!-- APPEND HERE PRODUCTS -->
+            </div>
+            <div id="PaginationBtns">
+                
             </div>
         </div>
     </div>

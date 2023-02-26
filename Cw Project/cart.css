@@ -1,12 +1,13 @@
 *{
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     color: #6b6a6a;
     font-size: 15px;
 }
-#first{
-    /* background-color: #E40026; */
-    /* margin: auto; */
+
+body{
+    margin: 0px;
+    padding: 0px;
 }
 
 #first > h3{
@@ -34,9 +35,7 @@
     color: #FFFFFF
 
 }
-#third{
-    /* border: 1px solid red; */
-}
+
 
 #third_child{ 
     /* border: 1px dashed red; */
@@ -87,12 +86,12 @@
 
 #details > div > img{
     width: 40%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
-#details div{
+/* #details div{
     border: 1px solid red
-}
+} */
 
 #details div:nth-child(1){
     padding: 0 8px 0 30px;
