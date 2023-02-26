@@ -6,9 +6,16 @@ if(name){
     let icon = document.querySelector(".singin>ion-icon")
     icon.style.display = "none"
     let div = document.querySelector(".singin")
-    // div.addEventListener("click" , (e)=>{
-    //     window.location.href = "index.html"
-    // })
+    div.addEventListener("click" , (e)=>{
+        window.location.href = "index.html"
+    })
+
+    let logout = document.getElementById("logout")
+    logout.addEventListener("click" , (e)=>{
+        name= ""
+        window.localStorage.setItem("userName" , name)
+        location.reload()
+    })
 }
 let cartSpan = document.querySelector(".cart span")
 window.addEventListener("load" , (e)=>{
