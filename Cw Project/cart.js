@@ -11,7 +11,6 @@ let arr = [
         details: "Size: M | Color: Blue",
         price: 519,
         delivery: 'Standard Delivery By 27 Feb - 01 Mar',
-        deliverytype: 'FREE',
         id: 1
     },
     {
@@ -20,16 +19,18 @@ let arr = [
         details: "Size: XXL | Color: Green",
         price: 429,
         delivery: 'Standard Delivery By 28 Feb - 02 Mar',
-        deliverytype: 'FREE',
         id: 2
     }
 ]
-showitem(arr)
+let LSdata=JSON.parse(localStorage.getItem("cart")) || [];
+
+console.log(LSdata)
+showitem(LSdata)
 
 function showitem(array){
     let thirddiv = `
         ${array.map((item) => getitem(item.img,
-            item.title,item.details,item.price,item.delivery,item.deliverytype,item.id)).join("")
+            item.title,item.details,item.price,item.ratings,item.id)).join("")
         }
         `
     third.innerHTML=thirddiv
@@ -39,7 +40,7 @@ function showitem(array){
 
 
 
-function getitem(img,title,details,price,delivery,deliverytype,id){
+function getitem(img,title,details,price,ratings,id){
     let item = `
     <div id="third_child">
         <div id="details">
@@ -62,7 +63,7 @@ function getitem(img,title,details,price,delivery,deliverytype,id){
             </select>
         </div>
         <div>
-            <p>${delivery}<span class="free">FREE</span></p>
+            <p>${ratings+" "}<span class="free">FREE</span></p>
         </div>
         <div>
         <p>Rs. </p><p id="totalpriceofproduct">${+price}</p>
@@ -73,17 +74,22 @@ function getitem(img,title,details,price,delivery,deliverytype,id){
     </div>
     
     `
-
     third.innerHTML = null
+    
     return item;    
 }
 let remove = document.getElementById("remove")
 let grandtotal = document.getElementById("grandtotal")
-// grandtotal.innerText = price.value   
-let p ; 
-// for(let i of arr){
-//     p += i.
-// }
+// grandtotal.innerText = price.value  
+
+
+let p = 0; 
+for(let i of LSdata){
+    p += +i.price
+}
+console.log(p)
+// grandtotal.innerText = +e.target.value*+price.innerText   
+
 
 var finalamount ;
 var overall ; 
@@ -105,27 +111,33 @@ for(let i=0; i<filter.length; i++){
         //     })
 
         totalpriceofproduct.innerText = +e.target.value*+price.innerText
-        grandtotal.innerText = +e.target.value*+price.innerText   
+                    let p = 0; 
+            for(let i of LSdata){
+                p += +i.price
+            }
+            console.log(p)
+            grandtotal.innerText = p   
         
     })
 }
 
 
 function removeitem(id){
-    arr.forEach((element,i)=>{
-        if(element.id == id){
-            let removed = arr.splice(i,1)
-            console.log("remove")
-
-            showitem(arr)
-            // delete arr.element
-
-        //     return true
-        //     console.log("rem")
-        // } else {
-        //     return false
+    // LSdata.forEach((element,i)=>{
+    //     if(element.id == id){
+    //         let removed = LSdata.splice(i,1)
+    //         console.log("remove")
+    //         showitem(LSdata)
+    let deleted = LSdata.filter((el,i)=>{
+        if(el.id == id){
+            return false
+        } else {
+            return true
         }
     })
+    localStorage.setItem("cart",JSON.stringify(deleted))
+    showitem(deleted)
+    window.location.reload();
 }
 
 let payment = document.getElementById("payment")

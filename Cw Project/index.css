@@ -329,7 +329,7 @@ footer{
     display: flex;
 }
 #slideShow{
-    width: 70%;
+    width: 100%;
     height: 280px;
     margin-left: 10px;
     margin-top: 13px;
@@ -414,6 +414,7 @@ footer{
     border-radius: 3px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     background-color: white;
+    /* background-color: #000; */
 }
 .category a{
     text-decoration: none;
@@ -455,6 +456,7 @@ footer{
 }
 #heading{
     padding-left: 20px;
+    
 }
 #secondHeading{
     padding: 10px;
@@ -589,3 +591,130 @@ footer{
 .info a{
     text-decoration: none;
 }
+
+
+
+/* Responsive */
+@media (max-width:1200px){
+    #topnav{
+        width: 100%;
+        display: grid;
+        
+    }
+
+
+    #CartDisplay{
+        display: none;
+    }
+
+    #slideShowImage{ 
+        width: 100%;
+     }
+    #slideShowImage>img{
+
+    }
+    #slideShow{
+        width: 100%;
+        
+    }
+    .middle{
+        /* display: flex; */
+        /* margin-left: 6%; */
+        /* align-items: center; */
+        width:70%
+    }
+    .middle>input{
+        /* padding: 10px 20px; */
+        /* height: 40px; */
+        width: 400px;
+        outline: none;
+    }
+
+    #topnav>div:nth-child(2)>a{
+        width:70%
+    }
+    #heading{
+        font-size: 12px;
+        
+    }
+
+    
+    .category a{
+        font-size: 11px;
+    }
+
+    #secondHeading{
+        font-size: 12px;
+    }
+
+    
+    #ThirdHeading{
+        font-size: 12px;
+
+    }
+    #RecentlyVProducts > h3{
+        font-size: 12px;
+    }
+
+    #RecentlyCards{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width: 130%;
+    }
+    #Qrcode{
+        display: none;
+    }
+    .tranding h3{
+        font-size: 12px;
+    }
+    
+
+    .download img{
+        width:5%
+    }
+}
+
+@media (max-width:800px){
+    #RecentlyCards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 130%;
+    }
+    .category{
+        width: 15%;
+        margin-left: 52px;
+        color: #333333;
+        font-size: 14px;
+        border-radius: 3px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        background-color: white;
+        /* background-color: #000; */
+        display: none;
+    }
+    .category{
+        display: none;
+    }
+
+    .middle{
+        /* display: flex; */
+        /* margin-left: 6%; */
+        /* align-items: center; */
+        width:30%
+    }
+
+    .middle>input{
+        padding: 10px 20px;
+        height: 40px;
+        width: 200px;
+        outline: none;
+    }
+}
+
+@media (max-width: 500px){
+    #RecentlyCards{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 130%;
+    }
+}
+
