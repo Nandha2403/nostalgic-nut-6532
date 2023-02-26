@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
 </head>
-<link rel="stylesheet" href="./dashboard.css">
+<link rel="stylesheet" href="./product.css">
 
 <body>
     <div class="container">
@@ -15,10 +15,7 @@
             <ul>
                 <li>
                     <a href="#">
-                        <span class="icon" id="logo">
-                            <!-- <ion-icon name="logo-apple"></ion-icon> -->
-                            <img src="./snadeel logo1.png" alt="logo">
-                        </span>
+                        <span class="icon"><img src="./snadeel logo1.png" alt="logo"></span>
                         <span class="title" id="iconTitle">quickdeals</span>
                     </a>
                 </li>
@@ -35,7 +32,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="./product.html">
+                    <a href="">
                         <span class="icon"><ion-icon name="cart-outline"></ion-icon></span>
                         <span class="title">Product</span>
                     </a>
@@ -59,7 +56,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="./login.html">
                         <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
                         <span class="title">Sign Out</span>
                     </a>
@@ -73,8 +70,8 @@
                 </div>
                 <div class="search">
                     <label>
-                        <input type="text" placeholder="Search here">
-                        <ion-icon name="search-outline"></ion-icon>
+                        <form><input type="text" placeholder="Search here" id="search"></form>
+                        <ion-icon name="search-outline" id="searchIcon"></ion-icon>
                     </label>
                 </div>
                 <!-- user image -->
@@ -86,15 +83,6 @@
             <div class="cardBox">
                 <div class="card">
                     <div>
-                        <div class="numbers">1,504</div>
-                        <div class="cardName">Daily Views</div>
-                    </div>
-                    <div class="iconBx">
-                        <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                </div>
-                <div class="card">
-                    <div>
                         <div class="numbers">108</div>
                         <div class="cardName">Sales</div>
                     </div>
@@ -102,38 +90,39 @@
                         <ion-icon name="cart-outline"></ion-icon>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" id="addBtn">
                     <div>
-                        <div class="numbers">285</div>
-                        <div class="cardName">Commments</div>
+                        <div class="numbers">Add Product</div>
                     </div>
                     <div class="iconBx">
-                        <ion-icon name="chatbubbles-outline"></ion-icon>
-                    </div>
-                </div>
-                <div class="card">
-                    <div>
-                        <div class="numbers">$8,900</div>
-                        <div class="cardName">Earnings</div>
-                    </div>
-                    <div class="iconBx">
-                        <ion-icon name="cash-outline"></ion-icon>
+                        <ion-icon name="add-outline"></ion-icon>
                     </div>
                 </div>
             </div>
             <!-- order details list -->
+            <div class="popup">
+                <button id="close">&times;</button>
+                <h2>Add Product</h2>
+                <form id="addForm">
+                    <div><input type="text" id="title" placeholder="Please enter the title here"></div>
+                    <div><input type="text" id="category" placeholder="Please enter category here"></div>
+                    <div><input type="url" id="image" placeholder="Please enter image url here"></div>
+                    <div><input type="number" id="price" placeholder="Please enter price here"></div>
+                    <button id="a">Add Product</button>
+                </form>
+            </div>
             <div class="details">
                 <div class="recentOrders">
                     <div class="cardHeader">
                         <h2>Recent Orders</h2>
-                        <a href="#" class="btn">View All</a>
+                        <!-- <a href="#" class="btn">View All</a> -->
                     </div>
                     <table>
                         <thead>
                             <tr>
                                 <td>Name</td>
                                 <td>Price</td>
-                                <td>Payment</td>
+                                <td>id</td>
                                 <td>Status</td>
                             </tr>
                         </thead>
@@ -148,13 +137,27 @@
                                 <td>TV</td>
                                 <td>$1200</td>
                                 <td>Paid</td>
-                                <td><span class="status delivered">Delivered</span></td>
+                                <td><span><select name="status" id="status">
+                                    <option value="delivered">Delivered</option>
+                                    <option value="pending">Pending</option>
+                                    <option value="progress">In progress</option>
+                                    <option value="return">Return</option>
+                                </select></span></td>
                             </tr>
                             <tr>
                                 <td>Dell Laptop</td>
                                 <td>$1200</td>
                                 <td>Paid</td>
-                                <td><span class="status progress">In Progress</span></td>
+                                <td>
+                                    <span>
+                                        <select name="status" id="status">
+                                            <option value="delivered">Delivered</option>
+                                            <option value="pending">Pending</option>
+                                            <option value="progress">In progress</option>
+                                            <option value="return">Return</option>
+                                        </select>
+                                    </span>
+                                </td>
                             </tr>
                             <tr>
                                 <td>SmartPhone</td>
@@ -171,68 +174,12 @@
                         </tbody>
                     </table>
                 </div>
-                <!-- new customers -->
-                <div class="recentCustomers">
-                    <div class="cardHeader">
-                        <h2>Recent Customers</h2>
-                    </div>
-                    <table>
-                        <tr>
-                            <td width="60px">
-                                <div class="imgBx"><img src="./img1.jpg" alt="#"></div>
-                            </td>
-                            <td>
-                                <h4>David<br><span>Italy</span></h4>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="60px">
-                                <div class="imgBx"><img src="./img1.jpg" alt="#"></div>
-                            </td>
-                            <td>
-                                <h4>David<br><span>Italy</span></h4>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="60px">
-                                <div class="imgBx"><img src="./img1.jpg" alt="#"></div>
-                            </td>
-                            <td>
-                                <h4>David<br><span>Italy</span></h4>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="60px">
-                                <div class="imgBx"><img src="./img1.jpg" alt="#"></div>
-                            </td>
-                            <td>
-                                <h4>David<br><span>Italy</span></h4>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="60px">
-                                <div class="imgBx"><img src="./img1.jpg" alt="#"></div>
-                            </td>
-                            <td>
-                                <h4>David<br><span>Italy</span></h4>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="60px">
-                                <div class="imgBx"><img src="./img1.jpg" alt="#"></div>
-                            </td>
-                            <td>
-                                <h4>David<br><span>Italy</span></h4>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
             </div>
         </div>
     </div>
 </body>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="./product.js"></script>
 <script src="./dashboard.js"></script>
-
 </html>

@@ -523,7 +523,7 @@ body{
     position: absolute;
     transform: translate(-60%,-90%);
     left: 50%;
-    top: 50%;
+    top: 9%;
     border-radius: 8px;
     display: none; 
     text-align: center;
@@ -586,4 +586,8 @@ body{
 #delete:hover{
     background-color: white;
     color: #222;
+}
+
+#searchIcon{
+    margin-top: 2.5%;
 }
