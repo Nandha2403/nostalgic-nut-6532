@@ -327,12 +327,14 @@ footer{
 #main{
     display: flex;
 }
-#main #slideShow{
+#slideShow{
     width: 70%;
     height: 280px;
     margin-left: 10px;
     margin-top: 13px;
-    /* border: 1px solid red; */
+}
+#slideShowImage{
+    height: 280px;
 }
 #slideShowImage>img{
     width: 100%;
